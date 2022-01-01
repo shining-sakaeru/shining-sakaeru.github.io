@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<feed xmlns="http://www.w3.org/2005/Atom" >
+  <generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator>
+  <link href="https://shining-sakaeru.github.io/tag/jykell/feed.xml" rel="self" type="application/atom+xml" />
+  <link href="https://shining-sakaeru.github.io/" rel="alternate" type="text/html" />
+  <updated>2022-01-01T15:44:21+00:00</updated>
+  <id>https://shining-sakaeru.github.io/tag/jykell/feed.xml</id>
+
+  
+  
+  
+
+  
+    <title type="html">Noah’s Blog | </title>
+  
+
+  
+    <subtitle>The engineer.</subtitle>
+  
+
+  
+
+  
+    
+      
+    
+  
+
+  
+  
+
+  
+    <entry>
+      <title type="html">Jykell start</title>
+      <link href="https://shining-sakaeru.github.io/jykell-start" rel="alternate" type="text/html" title="Jykell start" />
+      <published>2021-01-01T23:31:00+00:00</published>
+      <updated>2021-01-01T23:31:00+00:00</updated>
+      <id>https://shining-sakaeru.github.io/jykell-start</id>
+      <content type="html" xml:base="https://shining-sakaeru.github.io/jykell-start">&lt;p&gt;github blog를 생성하면서 사용하게 된 jekyll에 대한 post 입니다.&lt;/p&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>noah</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="jykell" />
+      
+
+      
+        <summary type="html">github blog를 생성하면서 사용하게 된 jekyll에 대한 post 입니다.</summary>
+      
+
+      
+      
+    </entry>
+  
+</feed>

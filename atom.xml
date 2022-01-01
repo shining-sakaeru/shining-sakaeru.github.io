@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title> - Articles</title>
+    <description>The engineer.</description>
+    <link>
+    https://shining-sakaeru.github.io</link>
+    
+      
+      <item>
+        <title>Jykell start</title>
+        
+          <description>&lt;p&gt;github blog를 생성하면서 사용하게 된 jekyll에 대한 post 입니다.&lt;/p&gt;
+</description>
+        
+        <pubDate>Fri, 01 Jan 2021 23:31:00 +0000</pubDate>
+        <link>
+        https://shining-sakaeru.github.io/jykell-start</link>
+        <guid isPermaLink="true">https://shining-sakaeru.github.io/jykell-start</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>첫 블로그 포스트</title>
+        
+          <description>&lt;p&gt;첫 포스팅 입니다.&lt;/p&gt;
+
+</description>
+        
+        <pubDate>Fri, 01 Jan 2021 22:21:00 +0000</pubDate>
+        <link>
+        https://shining-sakaeru.github.io/common-firstPost</link>
+        <guid isPermaLink="true">https://shining-sakaeru.github.io/common-firstPost</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>Gettysburg Address</title>
+        
+          <description>&lt;p&gt;Fourscore and seven years ago our fathers brought forth on this continent, a new nation, conceived in Liberty, and dedicated to the proposition that all men are created equal.&lt;/p&gt;
+
+</description>
+        
+        <pubDate>Thu, 19 Nov 1863 10:18:00 +0000</pubDate>
+        <link>
+        https://shining-sakaeru.github.io/gettysburg-address</link>
+        <guid isPermaLink="true">https://shining-sakaeru.github.io/gettysburg-address</guid>
+      </item>
+      
+    
+  </channel>
+</rss>
