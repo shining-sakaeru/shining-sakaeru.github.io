@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<feed xmlns="http://www.w3.org/2005/Atom" >
+  <generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator>
+  <link href="https://shining-sakaeru.github.io/author/noah/feed.xml" rel="self" type="application/atom+xml" />
+  <link href="https://shining-sakaeru.github.io/" rel="alternate" type="text/html" />
+  <updated>2022-01-02T11:58:33+09:00</updated>
+  <id>https://shining-sakaeru.github.io/author/noah/feed.xml</id>
+
+  
+  
+  
+
+  
+    <title type="html">Noah’s Blog | </title>
+  
+
+  
+    <subtitle>The engineer.</subtitle>
+  
+
+  
+
+  
+    
+      
+    
+  
+
+  
+  
+
+  
+    <entry>
+      <title type="html">Jykell 강좌(1) - Jykell Start</title>
+      <link href="https://shining-sakaeru.github.io/jykell-start" rel="alternate" type="text/html" title="Jykell 강좌(1) - Jykell Start" />
+      <published>2021-01-02T08:31:00+09:00</published>
+      <updated>2021-01-02T08:31:00+09:00</updated>
+      <id>https://shining-sakaeru.github.io/jykell-start</id>
+      <content type="html" xml:base="https://shining-sakaeru.github.io/jykell-start">&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt;Jykell 강좌는 여러 절로 구성되어 있습니다. &lt;/span&gt;&lt;/p&gt;
+&lt;ul class=&quot;table-of-contents-list&quot;&gt;
+    &lt;li&gt;&lt;a href=&quot;./jykell-start&quot;&gt;Jykell 강좌(1) - Jykell Start&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./jykell-setup&quot;&gt;Jykell 강좌(2) - Jykell Setup&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;github blog를 생성하면서 사용하게 된 jekyll에 대한 post 입니다.&lt;/p&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>noah</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="jykell" />
+      
+
+      
+        <summary type="html">Jykell 강좌는 여러 절로 구성되어 있습니다. Jykell 강좌(1) - Jykell Start Jykell 강좌(2) - Jykell Setup</summary>
+      
+
+      
+      
+    </entry>
+  
+    <entry>
+      <title type="html">Jykell 강좌(2) - Jykell Setup</title>
+      <link href="https://shining-sakaeru.github.io/jykell-setup" rel="alternate" type="text/html" title="Jykell 강좌(2) - Jykell Setup" />
+      <published>2021-01-02T08:31:00+09:00</published>
+      <updated>2021-01-02T08:31:00+09:00</updated>
+      <id>https://shining-sakaeru.github.io/jykell-setup</id>
+      <content type="html" xml:base="https://shining-sakaeru.github.io/jykell-setup">&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt;Jykell 강좌는 여러 절로 구성되어 있습니다. &lt;/span&gt;&lt;/p&gt;
+&lt;ul class=&quot;table-of-contents-list&quot;&gt;
+    &lt;li&gt;&lt;a href=&quot;./jykell-start&quot;&gt;Jykell 강좌(1) - Jykell Start&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./jykell-setup&quot;&gt;Jykell 강좌(2) - Jykell Setup&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;github blog 사용을 위한 Jykell Setup 과정입니다.&lt;/p&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>noah</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="jykell" />
+      
+
+      
+        <summary type="html">Jykell 강좌는 여러 절로 구성되어 있습니다. Jykell 강좌(1) - Jykell Start Jykell 강좌(2) - Jykell Setup</summary>
+      
+
+      
+      
+    </entry>
+  
+    <entry>
+      <title type="html">첫 블로그 포스트</title>
+      <link href="https://shining-sakaeru.github.io/common-firstPost" rel="alternate" type="text/html" title="첫 블로그 포스트" />
+      <published>2021-01-02T07:21:00+09:00</published>
+      <updated>2021-01-02T07:21:00+09:00</updated>
+      <id>https://shining-sakaeru.github.io/common-firstPost</id>
+      <content type="html" xml:base="https://shining-sakaeru.github.io/common-firstPost">&lt;p&gt;첫 포스팅 입니다.&lt;/p&gt;
+
+&lt;p&gt;제가 관심있는 영역들에 대한 포스트를 할 생각입니다.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Engineering&lt;/li&gt;
+  &lt;li&gt;Robot&lt;/li&gt;
+  &lt;li&gt;AI&lt;/li&gt;
+  &lt;li&gt;Server&lt;/li&gt;
+  &lt;li&gt;Linux&lt;/li&gt;
+  &lt;li&gt;개인적인 관심사들&lt;/li&gt;
+&lt;/ul&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>noah</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="common" />
+      
+
+      
+        <summary type="html">첫 포스팅 입니다.</summary>
+      
+
+      
+      
+    </entry>
+  
+</feed>
