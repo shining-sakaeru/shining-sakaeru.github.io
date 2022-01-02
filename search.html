@@ -12,7 +12,7 @@
 
 
 
-    <title>Jekyll - Noah's Blog</title>
+    <title>Search Result</title>
     <meta name="HandheldFriendly" content="True" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Styles'n'Scripts -->
@@ -54,19 +54,19 @@
     <!-- This tag outputs SEO meta+structured data and other important settings -->
     <meta name="description" content="The engineer." />
     <link rel="shortcut icon" href="https://shining-sakaeru.github.io/assets/built/images/heart.png" type="image/png" />
-    <link rel="canonical" href="https://shining-sakaeru.github.io/tag/jekyll/" />
+    <link rel="canonical" href="https://shining-sakaeru.github.io/search" />
     <meta name="referrer" content="no-referrer-when-downgrade" />
 
      <!--title below is coming from _includes/dynamic_title-->
     <meta property="og:site_name" content="Noah's Blog" />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="Jekyll - Noah's Blog" />
+    <meta property="og:title" content="Search Result" />
     <meta property="og:description" content="The engineer." />
-    <meta property="og:url" content="https://shining-sakaeru.github.io/tag/jekyll/" />
+    <meta property="og:url" content="https://shining-sakaeru.github.io/search" />
     <meta property="og:image" content="https://shining-sakaeru.github.io/assets/built/images/blog-cover1.png" />
     <meta property="article:publisher" content="https://www.facebook.com/" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Jekyll - Noah's Blog" />
+    <meta name="twitter:title" content="Search Result" />
     <meta name="twitter:description" content="The engineer." />
     <meta name="twitter:url" content="https://shining-sakaeru.github.io/" />
     <meta name="twitter:image" content="https://shining-sakaeru.github.io/assets/built/images/blog-cover1.png" />
@@ -86,7 +86,7 @@
         "name": "Noah's Blog",
         "logo": "https://shining-sakaeru.github.io/"
     },
-    "url": "https://shining-sakaeru.github.io/tag/jekyll/",
+    "url": "https://shining-sakaeru.github.io/search",
     "image": {
         "@type": "ImageObject",
         "url": "https://shining-sakaeru.github.io/assets/built/images/blog-cover1.png",
@@ -95,7 +95,7 @@
     },
     "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": "https://shining-sakaeru.github.io/tag/jekyll/"
+        "@id": "https://shining-sakaeru.github.io/search"
     },
     "description": "The engineer."
 }
@@ -110,26 +110,22 @@
     </script> -->
 
     <meta name="generator" content="Jekyll 3.6.2" />
-    <link rel="alternate" type="application/rss+xml" title="Tag Page" href="/feed.xml" />
+    <link rel="alternate" type="application/rss+xml" title="Search Result" href="/feed.xml" />
 
 
 </head>
 
 <body
-    class="tag-template">
+    class="page-template">
 
     <div class="site-wrapper">
         <!-- All the main content gets inserted here, index.hbs, post.hbs, etc -->
-        <!-- default -->
-<!-- The tag above means - insert everything in this file into the {body} of the default.hbs template -->
+        <!-- < default -->
+<!-- The tag above means: insert everything in this file
+into the {body} of the default.hbs template -->
 
 <!-- The big featured header, it uses blog cover image as a BG if available -->
-<!-- #tag -->
-<!-- dynamically loading backgrounds for tags,  descriptions and page titles -->
-
-
-
-<header class="site-header outer " style="background-image: url(/assets/built/images/background-frontend.jpg) ">
+<header class="site-header outer">
     <div class="inner">
         <nav class="site-nav">
     <div class="site-nav-left">
@@ -165,134 +161,91 @@
         
     </div>
 </nav>
-        <div class="site-header-content">
-            <h1 class="site-title">Jekyll</h1>
-            <h2 class="site-description">
-                
-    			    A collection of 2 posts
-                
-            </h2>
-        </div>
     </div>
 </header>
-<!-- tag -->
 
-<!-- The main content area -->
+<!-- Everything inside the #post tags pulls data from the post -->
+<!-- #post -->
+
 <main id="site-main" class="site-main outer" role="main">
     <div class="inner">
-        <div class="post-feed">
-            <!-- The tag below includes the markup for each post - partials/post-card.hbs -->
+
+        <article class="post-full  post page no-image">
+
+            <header class="post-full-header">
+                <h1 class="post-full-title">Search Result</h1>
+            </header>
+
             
 
+            <section class="post-full-content">
+                <form action="/search" method="get" hidden="hidden">
+    <label for="search-box"></label>
+    <input type="text" id="search-box" name="query">
+</form>
 
-    <article class="post-card tag-template">
-        
-            <a class="post-card-image-link" href="/jekyll-start">
-                <div class="post-card-image" style="background-image: url(/assets/built/images/jekyll-logo.png)"></div>
-            </a>
-        
-        <div class="post-card-content">
-            <a class="post-card-content-link" href="/jekyll-start">
-                <header class="post-card-header">
-                    
-                        
-                            
-                                <span class="post-card-tags">Jekyll</span>
-                            
-                        
-                    
+<ul class="mylist" id="search-results"></ul>
 
-                    <h2 class="post-card-title">Jekyll 강좌(1) - Jekyll Start</h2>
-                </header>
-                <section class="post-card-excerpt">
-                    
-                        <p>Jekyll 강좌는 여러 절로 구성되어 있습니다. 
+<script>
+    window.store = {
+    
+    "jekyll-setup": {
+        "title": "Jekyll 강좌(2) - Jekyll Setup",
+            "author": "noah",
+                "category": "",
+                    "content": { { post.content | strip_html | strip_newlines | jsonify } },
+        "url": "/jekyll-setup"
+    }
+    , 
+    
+    "jekyll-start": {
+        "title": "Jekyll 강좌(1) - Jekyll Start",
+            "author": "noah",
+                "category": "",
+                    "content": { { post.content | strip_html | strip_newlines | jsonify } },
+        "url": "/jekyll-start"
+    }
+    , 
+    
+    "common-firstpost": {
+        "title": "첫 블로그 포스트",
+            "author": "noah",
+                "category": "",
+                    "content": { { post.content | strip_html | strip_newlines | jsonify } },
+        "url": "/common-firstPost"
+    }
+    , 
+    
+    "gettysburg-address": {
+        "title": "Gettysburg Address",
+            "author": "abraham",
+                "category": "",
+                    "content": { { post.content | strip_html | strip_newlines | jsonify } },
+        "url": "/gettysburg-address"
+    }
+    
+    
+    };
+</script>
+<script src="assets/js/lunr.js"></script>
+<script src="assets/js/search.js"></script>
+            </section>
 
-    Jekyll 강좌(1) - Jekyll Start
-    Jekyll 강좌(2) - Jekyll Setup
+        </article>
 
-
-</p>
-                    
-                </section>
-            </a>
-            <footer class="post-card-meta">
-                
-                    
-                        
-                        <img class="author-profile-image" src="/assets/built/images/author-logo.jpg" alt="noah" />
-                        
-                        <span class="post-card-author">
-                            <a href="/author/noah/">noah</a>
-                        </span>
-                    
-                
-                <span class="reading-time">
-                    
-                    
-                      1 min read
-                    
-                </span>
-            </footer>
-        </div>
-    </article>
-
-    <article class="post-card tag-template">
-        
-            <a class="post-card-image-link" href="/jekyll-setup">
-                <div class="post-card-image" style="background-image: url(/assets/built/images/jekyll-logo.png)"></div>
-            </a>
-        
-        <div class="post-card-content">
-            <a class="post-card-content-link" href="/jekyll-setup">
-                <header class="post-card-header">
-                    
-                        
-                            
-                                <span class="post-card-tags">Jekyll</span>
-                            
-                        
-                    
-
-                    <h2 class="post-card-title">Jekyll 강좌(2) - Jekyll Setup</h2>
-                </header>
-                <section class="post-card-excerpt">
-                    
-                        <p>Jekyll 강좌는 여러 절로 구성되어 있습니다. 
-
-    Jekyll 강좌(1) - Jekyll Start
-    Jekyll 강좌(2) - Jekyll Setup
-
-
-</p>
-                    
-                </section>
-            </a>
-            <footer class="post-card-meta">
-                
-                    
-                        
-                        <img class="author-profile-image" src="/assets/built/images/author-logo.jpg" alt="noah" />
-                        
-                        <span class="post-card-author">
-                            <a href="/author/noah/">noah</a>
-                        </span>
-                    
-                
-                <span class="reading-time">
-                    
-                    
-                      1 min read
-                    
-                </span>
-            </footer>
-        </div>
-    </article>
-
-
-        </div>
     </div>
 </main>
+
+<!-- /post -->
+
+<!-- The #contentFor helper here will send everything inside it up to the matching #block helper found in default.hbs -->
+<script>
+$(function() {
+    var $postContent = $(".post-full-content");
+    $postContent.fitVids();
+});
+</script>
+
 
 
         <!-- Previous/next page links - displayed on every page -->
@@ -367,7 +320,7 @@
     <!-- Paginator increased to "infinit" in _config.yml -->
     <!-- if paginator.posts  -->
     <!-- <script>
-        var maxPages = parseInt('1');
+        var maxPages = parseInt('');
     </script>
     <script src="/assets/js/infinitescroll.js"></script> -->
     <!-- /endif -->
@@ -390,6 +343,14 @@
 
 
     <!-- The #block helper will pull in data from the #contentFor other template files. In this case, there's some JavaScript which we only want to use in post.hbs, but it needs to be included down here, after jQuery has already loaded. -->
+    
+    <script>
+$(function() {
+    var $postContent = $(".post-full-content");
+    $postContent.fitVids();
+});
+</script>
+
     
 
     <!-- Ghost outputs important scripts and data with this tag - it should always be the very last thing before the closing body tag -->

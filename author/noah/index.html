@@ -29,6 +29,9 @@
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
+    <!-- syntax.css -->
+    <link rel="stylesheet" type="text/css" href="/assets/built/syntax.css" />
+
     <!-- highlight.js -->
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css">
     <style>
@@ -129,12 +132,12 @@
             <nav class="site-nav">
     <div class="site-nav-left">
         
-            
-                <a class="site-nav-logo" href="https://shining-sakaeru.github.io/">Noah's Blog</a>
-            
+        
+        <a class="site-nav-logo" href="https://shining-sakaeru.github.io/">Noah's Blog</a>
         
         
-            <ul class="nav" role="menu">
+        
+        <ul class="nav" role="menu">
     <li class="nav-home" role="menuitem"><a href="/">Home</a></li>
     <li class="nav-about" role="menuitem"><a href="/about/">About</a></li>
     <li class="nav-common" role="menuitem"><a href="/tag/common/">Common</a></li>
@@ -156,11 +159,10 @@
             
         </div>
         
-            <a class="subscribe-button" href="#subscribe">Subscribe</a>
+        <a class="subscribe-button" href="#subscribe">Search</a>
         
     </div>
 </nav>
-
             <div class="site-header-content">
                 
                     <img class="author-profile-image" src="/assets/built/images/author-logo.jpg" alt="noah" />
@@ -383,19 +385,27 @@
         <a class="subscribe-overlay-close" href="#"></a>
         <div class="subscribe-overlay-content">
             
-            <h1 class="subscribe-overlay-title">Subscribe to Noah's Blog</h1>
-            <p class="subscribe-overlay-description">Stay up to date! Get all the latest &amp; greatest posts delivered
-                straight to your inbox</p>
-            <form method="post" action="/subscribe/" class="">
-    <input class="confirm" type="hidden" name="confirm"  /><input class="location" type="hidden" name="location"  /><input class="referrer" type="hidden" name="referrer"  />
+            <h1 class="subscribe-overlay-title">Search Noah's Blog</h1>
+            <p class="subscribe-overlay-description">
+                lunr.js를 이용한 posts 검색 </p>
+            <span id="searchform" method="post" action="/subscribe/" class="">
+    <input class="confirm" type="hidden" name="confirm" />
+    <input class="location" type="hidden" name="location" />
+    <input class="referrer" type="hidden" name="referrer" />
 
     <div class="form-group">
-        <input class="subscribe-email" type="email" name="email"  placeholder="youremail@example.com" />
+        <input class="subscribe-email" onkeyup="myFunc()" id="searchtext" type="text" name="searchtext"
+            placeholder="Search..." />
     </div>
-    <button class="" type="submit" disabled><span>Subscribe</span></button>
-    <script type="text/javascript">(function(g,h,o,s,t){h[o]('.location')[s]=h[o]('.location')[s] || g.location.href;h[o]('.referrer')[s]=h[o]('.referrer')[s] || h.referrer;})(window,document,'querySelector','value');</script>
-</form>
-
+    <script type="text/javascript">
+        function myFunc() {
+            if (event.keyCode == 13) {
+                var url = encodeURIComponent($("#searchtext").val());
+                location.href = "/search.html?query=" + url;
+            }
+        }
+    </script>
+</span>
         </div>
     </div>
     
