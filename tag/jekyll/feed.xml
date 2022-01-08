@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator>
   <link href="https://shining-sakaeru.github.io/tag/jekyll/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://shining-sakaeru.github.io/" rel="alternate" type="text/html" />
-  <updated>2022-01-05T21:42:42+09:00</updated>
+  <updated>2022-01-08T09:06:03+00:00</updated>
   <id>https://shining-sakaeru.github.io/tag/jekyll/feed.xml</id>
 
   
@@ -32,56 +32,10 @@
 
   
     <entry>
-      <title type="html">Jekyll 강좌(0) - Jekyll Start</title>
-      <link href="https://shining-sakaeru.github.io/jekyll-start" rel="alternate" type="text/html" title="Jekyll 강좌(0) - Jekyll Start" />
-      <published>2022-01-02T08:31:00+09:00</published>
-      <updated>2022-01-02T08:31:00+09:00</updated>
-      <id>https://shining-sakaeru.github.io/jekyll-start</id>
-      <content type="html" xml:base="https://shining-sakaeru.github.io/jekyll-start">&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt;Jekyll 강좌는 여러 절로 구성되어 있습니다. &lt;/span&gt;&lt;/p&gt;
-&lt;ul class=&quot;table-of-contents-list&quot;&gt;
-    &lt;li&gt;&lt;a href=&quot;./jekyll-start&quot;&gt;Jekyll 강좌(0) - Jekyll Start&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;./jekyll-setup&quot;&gt;Jekyll 강좌(1) - Jekyll Setup&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;github blog를 생성하면서 사용하게 된 jekyll에 대한 post 입니다.&lt;br /&gt;
-얼큰우동님 블로그(https://moon9342.github.io/)를 참고하여 진행했습니다.&lt;/p&gt;
-
-&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;helloWorld&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;code&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;nx&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;Hello World&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content>
-
-      
-      
-      
-      
-      
-
-      <author>
-          <name>noah</name>
-        
-        
-      </author>
-
-      
-
-      
-        <category term="jekyll" />
-      
-
-      
-        <summary type="html">Jekyll 강좌는 여러 절로 구성되어 있습니다. Jekyll 강좌(0) - Jekyll Start Jekyll 강좌(1) - Jekyll Setup</summary>
-      
-
-      
-      
-    </entry>
-  
-    <entry>
       <title type="html">Jekyll 강좌(1) - Jekyll Setup</title>
       <link href="https://shining-sakaeru.github.io/jekyll-setup" rel="alternate" type="text/html" title="Jekyll 강좌(1) - Jekyll Setup" />
-      <published>2022-01-02T08:31:00+09:00</published>
-      <updated>2022-01-02T08:31:00+09:00</updated>
+      <published>2022-01-01T23:31:00+00:00</published>
+      <updated>2022-01-01T23:31:00+00:00</updated>
       <id>https://shining-sakaeru.github.io/jekyll-setup</id>
       <content type="html" xml:base="https://shining-sakaeru.github.io/jekyll-setup">&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt;Jekyll 강좌는 여러 절로 구성되어 있습니다. &lt;/span&gt;&lt;/p&gt;
 &lt;ul class=&quot;table-of-contents-list&quot;&gt;
@@ -137,6 +91,52 @@
 &lt;hr /&gt;
 
 &lt;p&gt;특이사항은 따로 없었습니다.&lt;/p&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>noah</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="jekyll" />
+      
+
+      
+        <summary type="html">Jekyll 강좌는 여러 절로 구성되어 있습니다. Jekyll 강좌(0) - Jekyll Start Jekyll 강좌(1) - Jekyll Setup</summary>
+      
+
+      
+      
+    </entry>
+  
+    <entry>
+      <title type="html">Jekyll 강좌(0) - Jekyll Start</title>
+      <link href="https://shining-sakaeru.github.io/jekyll-start" rel="alternate" type="text/html" title="Jekyll 강좌(0) - Jekyll Start" />
+      <published>2022-01-01T23:31:00+00:00</published>
+      <updated>2022-01-01T23:31:00+00:00</updated>
+      <id>https://shining-sakaeru.github.io/jekyll-start</id>
+      <content type="html" xml:base="https://shining-sakaeru.github.io/jekyll-start">&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt;Jekyll 강좌는 여러 절로 구성되어 있습니다. &lt;/span&gt;&lt;/p&gt;
+&lt;ul class=&quot;table-of-contents-list&quot;&gt;
+    &lt;li&gt;&lt;a href=&quot;./jekyll-start&quot;&gt;Jekyll 강좌(0) - Jekyll Start&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./jekyll-setup&quot;&gt;Jekyll 강좌(1) - Jekyll Setup&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;github blog를 생성하면서 사용하게 된 jekyll에 대한 post 입니다.&lt;br /&gt;
+얼큰우동님 블로그(https://moon9342.github.io/)를 참고하여 진행했습니다.&lt;/p&gt;
+
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;helloWorld&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;code&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;nx&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;Hello World&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content>
 
       
       
