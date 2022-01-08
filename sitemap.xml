@@ -4,9 +4,121 @@
         xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     
     <url>
+        <loc>https://shining-sakaeru.github.io/jekyll-travisCI.html</loc>
+        
+        <lastmod>2021-01-08T19:39:00+00:00</lastmod>
+        
+
+        
+        <changefreq>weekly</changefreq>
+        
+
+        
+        <priority>0.5</priority>
+        
+
+    </url>
+    
+    <url>
+        <loc>https://shining-sakaeru.github.io/jekyll-gitHubGist.html</loc>
+        
+        <lastmod>2021-01-08T19:22:00+00:00</lastmod>
+        
+
+        
+        <changefreq>weekly</changefreq>
+        
+
+        
+        <priority>0.5</priority>
+        
+
+    </url>
+    
+    <url>
+        <loc>https://shining-sakaeru.github.io/jekyll-googleSearchConsole.html</loc>
+        
+        <lastmod>2021-01-08T18:49:00+00:00</lastmod>
+        
+
+        
+        <changefreq>weekly</changefreq>
+        
+
+        
+        <priority>0.5</priority>
+        
+
+    </url>
+    
+    <url>
+        <loc>https://shining-sakaeru.github.io/jekyll-searchFunction.html</loc>
+        
+        <lastmod>2021-01-08T18:39:00+00:00</lastmod>
+        
+
+        
+        <changefreq>weekly</changefreq>
+        
+
+        
+        <priority>0.5</priority>
+        
+
+    </url>
+    
+    <url>
+        <loc>https://shining-sakaeru.github.io/jekyll-highlighting.html</loc>
+        
+        <lastmod>2021-01-08T18:34:00+00:00</lastmod>
+        
+
+        
+        <changefreq>weekly</changefreq>
+        
+
+        
+        <priority>0.5</priority>
+        
+
+    </url>
+    
+    <url>
+        <loc>https://shining-sakaeru.github.io/jekyll-webFont.html</loc>
+        
+        <lastmod>2021-01-08T18:31:00+00:00</lastmod>
+        
+
+        
+        <changefreq>weekly</changefreq>
+        
+
+        
+        <priority>0.5</priority>
+        
+
+    </url>
+    
+    <url>
+        <loc>https://shining-sakaeru.github.io/jekyll-modifyAndPublish.html</loc>
+        
+        <lastmod>2021-01-08T18:14:00+00:00</lastmod>
+        
+
+        
+        <changefreq>weekly</changefreq>
+        
+
+        
+        <priority>0.5</priority>
+        
+
+    </url>
+    
+    <url>
         <loc>https://shining-sakaeru.github.io/jekyll-setup.html</loc>
         
-        <lastmod>2022-01-01T23:31:00+00:00</lastmod>
+        <lastmod>2021-01-02T23:31:00+00:00</lastmod>
         
 
         
@@ -22,7 +134,7 @@
     <url>
         <loc>https://shining-sakaeru.github.io/jekyll-start.html</loc>
         
-        <lastmod>2022-01-01T23:31:00+00:00</lastmod>
+        <lastmod>2021-01-01T23:31:00+00:00</lastmod>
         
 
         
@@ -39,22 +151,6 @@
         <loc>https://shining-sakaeru.github.io/common-firstPost.html</loc>
         
         <lastmod>2021-01-01T22:21:00+00:00</lastmod>
-        
-
-        
-        <changefreq>weekly</changefreq>
-        
-
-        
-        <priority>0.5</priority>
-        
-
-    </url>
-    
-    <url>
-        <loc>https://shining-sakaeru.github.io/gettysburg-address.html</loc>
-        
-        <lastmod>1863-11-19T10:18:00+00:00</lastmod>
         
 
         

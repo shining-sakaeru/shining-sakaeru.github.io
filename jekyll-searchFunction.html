@@ -12,7 +12,7 @@
 
 
 
-    <title>Jekyll 따라하기(1) - Jekyll Setup</title>
+    <title>Jekyll 따라하기(5) - Search function with lunr.js</title>
     <meta name="HandheldFriendly" content="True" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Styles'n'Scripts -->
@@ -54,23 +54,23 @@
     <!-- This tag outputs SEO meta+structured data and other important settings -->
     <meta name="description" content="The engineer." />
     <link rel="shortcut icon" href="https://shining-sakaeru.github.io/assets/built/images/heart.png" type="image/png" />
-    <link rel="canonical" href="https://shining-sakaeru.github.io/jekyll-setup" />
+    <link rel="canonical" href="https://shining-sakaeru.github.io/jekyll-searchFunction" />
     <meta name="referrer" content="no-referrer-when-downgrade" />
 
      <!--title below is coming from _includes/dynamic_title-->
     <meta property="og:site_name" content="Noah's Blog" />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="Jekyll 따라하기(1) - Jekyll Setup" />
+    <meta property="og:title" content="Jekyll 따라하기(5) - Search function with lunr.js" />
     <meta property="og:description" content="Jekyll 따라하기의 목차입니다. Jekyll 따라하기(0) - Jekyll Start Jekyll 따라하기(1) - Jekyll Setup Jekyll 따라하기(2) - Jekyll Modify and Publish Jekyll 따라하기(3) - Jekyll Web Font Jekyll 따라하기(4) - Highlighting with rouge Jekyll 따라하기(5) - Search function with lunr.js Jekyll 따라하기(6) - Google Search Console Jekyll 따라하기(7) - GitHub Gist" />
-    <meta property="og:url" content="https://shining-sakaeru.github.io/jekyll-setup" />
+    <meta property="og:url" content="https://shining-sakaeru.github.io/jekyll-searchFunction" />
     <meta property="og:image" content="https://shining-sakaeru.github.io/assets/built/images/jekyll-logo.png" />
     <meta property="article:publisher" content="https://www.facebook.com/" />
     <meta property="article:author" content="https://www.facebook.com/" />
-    <meta property="article:published_time" content="2021-01-02T23:31:00+00:00" />
-    <meta property="article:modified_time" content="2021-01-02T23:31:00+00:00" />
+    <meta property="article:published_time" content="2021-01-08T18:39:00+00:00" />
+    <meta property="article:modified_time" content="2021-01-08T18:39:00+00:00" />
     <meta property="article:tag" content="Jekyll" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Jekyll 따라하기(1) - Jekyll Setup" />
+    <meta name="twitter:title" content="Jekyll 따라하기(5) - Search function with lunr.js" />
     <meta name="twitter:description" content="Jekyll 따라하기의 목차입니다. Jekyll 따라하기(0) - Jekyll Start Jekyll 따라하기(1) - Jekyll Setup Jekyll 따라하기(2) - Jekyll Modify and Publish Jekyll 따라하기(3) - Jekyll Web Font Jekyll 따라하기(4) - Highlighting with rouge Jekyll 따라하기(5) - Search function with lunr.js Jekyll 따라하기(6) - Google Search Console Jekyll 따라하기(7) - GitHub Gist" />
     <meta name="twitter:url" content="https://shining-sakaeru.github.io/" />
     <meta name="twitter:image" content="https://shining-sakaeru.github.io/assets/built/images/jekyll-logo.png" />
@@ -92,7 +92,7 @@
         "name": "Noah's Blog",
         "logo": "https://shining-sakaeru.github.io/"
     },
-    "url": "https://shining-sakaeru.github.io/jekyll-setup",
+    "url": "https://shining-sakaeru.github.io/jekyll-searchFunction",
     "image": {
         "@type": "ImageObject",
         "url": "https://shining-sakaeru.github.io/assets/built/images/jekyll-logo.png",
@@ -101,7 +101,7 @@
     },
     "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": "https://shining-sakaeru.github.io/jekyll-setup"
+        "@id": "https://shining-sakaeru.github.io/jekyll-searchFunction"
     },
     "description": "Jekyll 따라하기의 목차입니다. Jekyll 따라하기(0) - Jekyll Start Jekyll 따라하기(1) - Jekyll Setup Jekyll 따라하기(2) - Jekyll Modify and Publish Jekyll 따라하기(3) - Jekyll Web Font Jekyll 따라하기(4) - Highlighting with rouge Jekyll 따라하기(5) - Search function with lunr.js Jekyll 따라하기(6) - Google Search Console Jekyll 따라하기(7) - GitHub Gist"
 }
@@ -116,7 +116,7 @@
     </script> -->
 
     <meta name="generator" content="Jekyll 3.6.2" />
-    <link rel="alternate" type="application/rss+xml" title="Jekyll 따라하기(1) - Jekyll Setup" href="/feed.xml" />
+    <link rel="alternate" type="application/rss+xml" title="Jekyll 따라하기(5) - Search function with lunr.js" href="/feed.xml" />
 
 
 </head>
@@ -180,7 +180,7 @@ into the {body} of the default.hbs template -->
 
             <header class="post-full-header">
                 <section class="post-full-meta">
-                    <time class="post-full-meta-date" datetime=" 2 January 2021"> 2 January 2021</time>
+                    <time class="post-full-meta-date" datetime=" 8 January 2021"> 8 January 2021</time>
                     
                     <span class="date-divider">/</span>
                     
@@ -190,7 +190,7 @@ into the {body} of the default.hbs template -->
                     
                     
                 </section>
-                <h1 class="post-full-title">Jekyll 따라하기(1) - Jekyll Setup</h1>
+                <h1 class="post-full-title">Jekyll 따라하기(5) - Search function with lunr.js</h1>
             </header>
 
             
@@ -217,51 +217,42 @@ into the {body} of the default.hbs template -->
 <p>github blog 사용을 위한 Jykell Setup 과정입니다.</p>
 
 <ul>
-  <li>Reference: https://moon9342.github.io/jekyll-start</li>
+  <li>Reference: https://moon9342.github.io/jekyll-search</li>
 </ul>
 
 <hr />
 
 <ol>
   <li>
-    <p>Ruby 설치</p>
+    <p>search link 생성</p>
 
     <blockquote>
-      <p>https://rubyinstaller.org/downloads/</p>
+      <p>_includes/site-nav.html 에서 subscribe를 search로 변경</p>
     </blockquote>
   </li>
   <li>
-    <p>bundler 설치 및 Local Server 실행</p>
+    <p>Search Page 설정</p>
 
     <blockquote>
-      <p>사용할 폴더 생성</p>
+      <p>_layouts/default.html 수정
+_includes/subscribe-form.html 수정
+search.html 생성 및 수정</p>
     </blockquote>
+  </li>
+  <li>
+    <p>lunr.js 다운로드 및 설정</p>
 
     <blockquote>
-      <p>Jasper2 theme download (http://jekyllthemes.org/themes/jasper2/)</p>
-    </blockquote>
-
-    <blockquote>
-      <p>gem install bundler</p>
-    </blockquote>
-
-    <blockquote>
-      <p>bundle install</p>
-    </blockquote>
-
-    <blockquote>
-      <p>bundle exec jekyll serve</p>
-    </blockquote>
-
-    <blockquote>
-      <p>http://localhost:4000 Local 홈페이지 접속</p>
+      <p>assets/js/lunr.js</p>
     </blockquote>
   </li>
 </ol>
 
 <hr />
 
-<p>특이사항은 따로 없었습니다.</p>
+<p>lunr.js 추천코드 사용시 동작하지 않음.<br />
+https://lunrjs.com/ 에서 다운로드 받아도 동작하지 않음.<br />
+문제점 확인 중…</p>
 
                 </div>
             </section>
@@ -326,9 +317,9 @@ into the {body} of the default.hbs template -->
                 <div id="disqus_thread"></div>
                 <script>
                     var disqus_config = function () {
-                        var this_page_url = 'https://shining-sakaeru.github.io/jekyll-setup';
-                        var this_page_identifier = '/jekyll-setup';
-                        var this_page_title = 'Jekyll 따라하기(1) - Jekyll Setup';
+                        var this_page_url = 'https://shining-sakaeru.github.io/jekyll-searchFunction';
+                        var this_page_identifier = '/jekyll-searchFunction';
+                        var this_page_title = 'Jekyll 따라하기(5) - Search function with lunr.js';
                     };
                     (function () {
                         var d = document, s = d.createElement('script');
@@ -394,9 +385,6 @@ into the {body} of the default.hbs template -->
                             
                         
                         
-                        
-                        
-                            
                             
                             
                         
@@ -422,6 +410,9 @@ into the {body} of the default.hbs template -->
                             
                         
                         
+                        
+                        
+                            
                             
                             
                         
@@ -452,12 +443,12 @@ into the {body} of the default.hbs template -->
 
     <article class="post-card post-template">
         
-            <a class="post-card-image-link" href="/jekyll-modifyAndPublish">
+            <a class="post-card-image-link" href="/jekyll-googleSearchConsole">
                 <div class="post-card-image" style="background-image: url(/assets/built/images/jekyll-logo.png)"></div>
             </a>
         
         <div class="post-card-content">
-            <a class="post-card-content-link" href="/jekyll-modifyAndPublish">
+            <a class="post-card-content-link" href="/jekyll-googleSearchConsole">
                 <header class="post-card-header">
                     
                         
@@ -467,7 +458,7 @@ into the {body} of the default.hbs template -->
                         
                     
 
-                    <h2 class="post-card-title">Jekyll 따라하기(2) - Jekyll Modify and Publish</h2>
+                    <h2 class="post-card-title">Jekyll 따라하기(6) - Google Search Console</h2>
                 </header>
                 <section class="post-card-excerpt">
                     
@@ -504,12 +495,12 @@ into the {body} of the default.hbs template -->
 
     <article class="post-card post-template">
         
-            <a class="post-card-image-link" href="/jekyll-start">
+            <a class="post-card-image-link" href="/jekyll-highlighting">
                 <div class="post-card-image" style="background-image: url(/assets/built/images/jekyll-logo.png)"></div>
             </a>
         
         <div class="post-card-content">
-            <a class="post-card-content-link" href="/jekyll-start">
+            <a class="post-card-content-link" href="/jekyll-highlighting">
                 <header class="post-card-header">
                     
                         
@@ -519,7 +510,7 @@ into the {body} of the default.hbs template -->
                         
                     
 
-                    <h2 class="post-card-title">Jekyll 따라하기(0) - Jekyll Start</h2>
+                    <h2 class="post-card-title">Jekyll 따라하기(4) - Highlighting with rouge</h2>
                 </header>
                 <section class="post-card-excerpt">
                     
@@ -563,18 +554,18 @@ into the {body} of the default.hbs template -->
         </a>
     </div>
     <span class="floating-header-divider">&mdash;</span>
-    <div class="floating-header-title">Jekyll 따라하기(1) - Jekyll Setup</div>
+    <div class="floating-header-title">Jekyll 따라하기(5) - Search function with lunr.js</div>
     <div class="floating-header-share">
         <div class="floating-header-share-label">Share this <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
     <path d="M7.5 15.5V4a1.5 1.5 0 1 1 3 0v4.5h2a1 1 0 0 1 1 1h2a1 1 0 0 1 1 1H18a1.5 1.5 0 0 1 1.5 1.5v3.099c0 .929-.13 1.854-.385 2.748L17.5 23.5h-9c-1.5-2-5.417-8.673-5.417-8.673a1.2 1.2 0 0 1 1.76-1.605L7.5 15.5zm6-6v2m-3-3.5v3.5m6-1v2"/>
 </svg>
 </div>
-        <a class="floating-header-share-tw" href="https://twitter.com/share?text=Jekyll+%EB%94%B0%EB%9D%BC%ED%95%98%EA%B8%B0%281%29+-+Jekyll+Setup&amp;url=https://shining-sakaeru.github.io/jekyll-setup"
+        <a class="floating-header-share-tw" href="https://twitter.com/share?text=Jekyll+%EB%94%B0%EB%9D%BC%ED%95%98%EA%B8%B0%285%29+-+Search+function+with+lunr.js&amp;url=https://shining-sakaeru.github.io/jekyll-searchFunction"
             onclick="window.open(this.href, 'share-twitter', 'width=550,height=235');return false;">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M30.063 7.313c-.813 1.125-1.75 2.125-2.875 2.938v.75c0 1.563-.188 3.125-.688 4.625a15.088 15.088 0 0 1-2.063 4.438c-.875 1.438-2 2.688-3.25 3.813a15.015 15.015 0 0 1-4.625 2.563c-1.813.688-3.75 1-5.75 1-3.25 0-6.188-.875-8.875-2.625.438.063.875.125 1.375.125 2.688 0 5.063-.875 7.188-2.5-1.25 0-2.375-.375-3.375-1.125s-1.688-1.688-2.063-2.875c.438.063.813.125 1.125.125.5 0 1-.063 1.5-.25-1.313-.25-2.438-.938-3.313-1.938a5.673 5.673 0 0 1-1.313-3.688v-.063c.813.438 1.688.688 2.625.688a5.228 5.228 0 0 1-1.875-2c-.5-.875-.688-1.813-.688-2.75 0-1.063.25-2.063.75-2.938 1.438 1.75 3.188 3.188 5.25 4.25s4.313 1.688 6.688 1.813a5.579 5.579 0 0 1 1.5-5.438c1.125-1.125 2.5-1.688 4.125-1.688s3.063.625 4.188 1.813a11.48 11.48 0 0 0 3.688-1.375c-.438 1.375-1.313 2.438-2.563 3.188 1.125-.125 2.188-.438 3.313-.875z"/></svg>
 
         </a>
-        <a class="floating-header-share-fb" href="https://www.facebook.com/sharer/sharer.php?u=https://shining-sakaeru.github.io/jekyll-setup"
+        <a class="floating-header-share-fb" href="https://www.facebook.com/sharer/sharer.php?u=https://shining-sakaeru.github.io/jekyll-searchFunction"
             onclick="window.open(this.href, 'share-facebook','width=580,height=296');return false;">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M19 6h5V0h-5c-3.86 0-7 3.14-7 7v3H8v6h4v16h6V16h5l1-6h-6V7c0-.542.458-1 1-1z"/></svg>
 

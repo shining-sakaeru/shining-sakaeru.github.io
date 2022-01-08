@@ -8,17 +8,214 @@
     
       
       <item>
-        <title>Jekyll 강좌(1) - Jekyll Setup</title>
+        <title>Jekyll 따라하기(8) - Travis CI</title>
         
-          <description>&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt;Jekyll 강좌는 여러 절로 구성되어 있습니다. &lt;/span&gt;&lt;/p&gt;
+          <description>&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt;Jekyll 따라하기의 목차입니다.&lt;/span&gt;&lt;/p&gt;
 &lt;ul class=&quot;table-of-contents-list&quot;&gt;
-    &lt;li&gt;&lt;a href=&quot;./jekyll-start&quot;&gt;Jekyll 강좌(0) - Jekyll Start&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;./jekyll-setup&quot;&gt;Jekyll 강좌(1) - Jekyll Setup&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./jekyll-start&quot;&gt;Jekyll 따라하기(0) - Jekyll Start&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./jekyll-setup&quot;&gt;Jekyll 따라하기(1) - Jekyll Setup&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./jekyll-modifyAndPublish&quot;&gt;Jekyll 따라하기(2) - Jekyll Modify and Publish&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./jekyll-webFont&quot;&gt;Jekyll 따라하기(3) - Jekyll Web Font&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./jekyll-highlighting&quot;&gt;Jekyll 따라하기(4) - Highlighting with rouge&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./jekyll-searchFunction&quot;&gt;Jekyll 따라하기(5) - Search function with lunr.js&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./jekyll-googleSearchConsole&quot;&gt;Jekyll 따라하기(6) - Google Search Console&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./jekyll-gitHubGist&quot;&gt;Jekyll 따라하기(7) - GitHub Gist&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./jekyll-travisCI&quot;&gt;Jekyll 따라하기(8) - Travis CI&lt;/a&gt;&lt;/li&gt;
+
 &lt;/ul&gt;
 
 </description>
         
-        <pubDate>Sat, 01 Jan 2022 23:31:00 +0000</pubDate>
+        <pubDate>Fri, 08 Jan 2021 19:39:00 +0000</pubDate>
+        <link>
+        https://shining-sakaeru.github.io/jekyll-travisCI</link>
+        <guid isPermaLink="true">https://shining-sakaeru.github.io/jekyll-travisCI</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>Jekyll 따라하기(7) - GitHub Gist</title>
+        
+          <description>&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt;Jekyll 따라하기의 목차입니다.&lt;/span&gt;&lt;/p&gt;
+&lt;ul class=&quot;table-of-contents-list&quot;&gt;
+    &lt;li&gt;&lt;a href=&quot;./jekyll-start&quot;&gt;Jekyll 따라하기(0) - Jekyll Start&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./jekyll-setup&quot;&gt;Jekyll 따라하기(1) - Jekyll Setup&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./jekyll-modifyAndPublish&quot;&gt;Jekyll 따라하기(2) - Jekyll Modify and Publish&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./jekyll-webFont&quot;&gt;Jekyll 따라하기(3) - Jekyll Web Font&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./jekyll-highlighting&quot;&gt;Jekyll 따라하기(4) - Highlighting with rouge&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./jekyll-searchFunction&quot;&gt;Jekyll 따라하기(5) - Search function with lunr.js&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./jekyll-googleSearchConsole&quot;&gt;Jekyll 따라하기(6) - Google Search Console&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./jekyll-gitHubGist&quot;&gt;Jekyll 따라하기(7) - GitHub Gist&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./jekyll-travisCI&quot;&gt;Jekyll 따라하기(8) - Travis CI&lt;/a&gt;&lt;/li&gt;
+
+&lt;/ul&gt;
+
+</description>
+        
+        <pubDate>Fri, 08 Jan 2021 19:22:00 +0000</pubDate>
+        <link>
+        https://shining-sakaeru.github.io/jekyll-gitHubGist</link>
+        <guid isPermaLink="true">https://shining-sakaeru.github.io/jekyll-gitHubGist</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>Jekyll 따라하기(6) - Google Search Console</title>
+        
+          <description>&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt;Jekyll 따라하기의 목차입니다.&lt;/span&gt;&lt;/p&gt;
+&lt;ul class=&quot;table-of-contents-list&quot;&gt;
+    &lt;li&gt;&lt;a href=&quot;./jekyll-start&quot;&gt;Jekyll 따라하기(0) - Jekyll Start&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./jekyll-setup&quot;&gt;Jekyll 따라하기(1) - Jekyll Setup&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./jekyll-modifyAndPublish&quot;&gt;Jekyll 따라하기(2) - Jekyll Modify and Publish&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./jekyll-webFont&quot;&gt;Jekyll 따라하기(3) - Jekyll Web Font&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./jekyll-highlighting&quot;&gt;Jekyll 따라하기(4) - Highlighting with rouge&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./jekyll-searchFunction&quot;&gt;Jekyll 따라하기(5) - Search function with lunr.js&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./jekyll-googleSearchConsole&quot;&gt;Jekyll 따라하기(6) - Google Search Console&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./jekyll-gitHubGist&quot;&gt;Jekyll 따라하기(7) - GitHub Gist&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./jekyll-travisCI&quot;&gt;Jekyll 따라하기(8) - Travis CI&lt;/a&gt;&lt;/li&gt;
+
+&lt;/ul&gt;
+
+</description>
+        
+        <pubDate>Fri, 08 Jan 2021 18:49:00 +0000</pubDate>
+        <link>
+        https://shining-sakaeru.github.io/jekyll-googleSearchConsole</link>
+        <guid isPermaLink="true">https://shining-sakaeru.github.io/jekyll-googleSearchConsole</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>Jekyll 따라하기(5) - Search function with lunr.js</title>
+        
+          <description>&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt;Jekyll 따라하기의 목차입니다.&lt;/span&gt;&lt;/p&gt;
+&lt;ul class=&quot;table-of-contents-list&quot;&gt;
+    &lt;li&gt;&lt;a href=&quot;./jekyll-start&quot;&gt;Jekyll 따라하기(0) - Jekyll Start&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./jekyll-setup&quot;&gt;Jekyll 따라하기(1) - Jekyll Setup&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./jekyll-modifyAndPublish&quot;&gt;Jekyll 따라하기(2) - Jekyll Modify and Publish&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./jekyll-webFont&quot;&gt;Jekyll 따라하기(3) - Jekyll Web Font&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./jekyll-highlighting&quot;&gt;Jekyll 따라하기(4) - Highlighting with rouge&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./jekyll-searchFunction&quot;&gt;Jekyll 따라하기(5) - Search function with lunr.js&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./jekyll-googleSearchConsole&quot;&gt;Jekyll 따라하기(6) - Google Search Console&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./jekyll-gitHubGist&quot;&gt;Jekyll 따라하기(7) - GitHub Gist&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./jekyll-travisCI&quot;&gt;Jekyll 따라하기(8) - Travis CI&lt;/a&gt;&lt;/li&gt;
+
+&lt;/ul&gt;
+
+</description>
+        
+        <pubDate>Fri, 08 Jan 2021 18:39:00 +0000</pubDate>
+        <link>
+        https://shining-sakaeru.github.io/jekyll-searchFunction</link>
+        <guid isPermaLink="true">https://shining-sakaeru.github.io/jekyll-searchFunction</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>Jekyll 따라하기(4) - Highlighting with rouge</title>
+        
+          <description>&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt;Jekyll 따라하기의 목차입니다.&lt;/span&gt;&lt;/p&gt;
+&lt;ul class=&quot;table-of-contents-list&quot;&gt;
+    &lt;li&gt;&lt;a href=&quot;./jekyll-start&quot;&gt;Jekyll 따라하기(0) - Jekyll Start&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./jekyll-setup&quot;&gt;Jekyll 따라하기(1) - Jekyll Setup&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./jekyll-modifyAndPublish&quot;&gt;Jekyll 따라하기(2) - Jekyll Modify and Publish&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./jekyll-webFont&quot;&gt;Jekyll 따라하기(3) - Jekyll Web Font&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./jekyll-highlighting&quot;&gt;Jekyll 따라하기(4) - Highlighting with rouge&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./jekyll-searchFunction&quot;&gt;Jekyll 따라하기(5) - Search function with lunr.js&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./jekyll-googleSearchConsole&quot;&gt;Jekyll 따라하기(6) - Google Search Console&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./jekyll-gitHubGist&quot;&gt;Jekyll 따라하기(7) - GitHub Gist&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./jekyll-travisCI&quot;&gt;Jekyll 따라하기(8) - Travis CI&lt;/a&gt;&lt;/li&gt;
+
+&lt;/ul&gt;
+
+</description>
+        
+        <pubDate>Fri, 08 Jan 2021 18:34:00 +0000</pubDate>
+        <link>
+        https://shining-sakaeru.github.io/jekyll-highlighting</link>
+        <guid isPermaLink="true">https://shining-sakaeru.github.io/jekyll-highlighting</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>Jekyll 따라하기(3) - Jekyll Web Font</title>
+        
+          <description>&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt;Jekyll 따라하기의 목차입니다.&lt;/span&gt;&lt;/p&gt;
+&lt;ul class=&quot;table-of-contents-list&quot;&gt;
+    &lt;li&gt;&lt;a href=&quot;./jekyll-start&quot;&gt;Jekyll 따라하기(0) - Jekyll Start&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./jekyll-setup&quot;&gt;Jekyll 따라하기(1) - Jekyll Setup&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./jekyll-modifyAndPublish&quot;&gt;Jekyll 따라하기(2) - Jekyll Modify and Publish&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./jekyll-webFont&quot;&gt;Jekyll 따라하기(3) - Jekyll Web Font&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./jekyll-highlighting&quot;&gt;Jekyll 따라하기(4) - Highlighting with rouge&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./jekyll-searchFunction&quot;&gt;Jekyll 따라하기(5) - Search function with lunr.js&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./jekyll-googleSearchConsole&quot;&gt;Jekyll 따라하기(6) - Google Search Console&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./jekyll-gitHubGist&quot;&gt;Jekyll 따라하기(7) - GitHub Gist&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./jekyll-travisCI&quot;&gt;Jekyll 따라하기(8) - Travis CI&lt;/a&gt;&lt;/li&gt;
+
+&lt;/ul&gt;
+
+</description>
+        
+        <pubDate>Fri, 08 Jan 2021 18:31:00 +0000</pubDate>
+        <link>
+        https://shining-sakaeru.github.io/jekyll-webFont</link>
+        <guid isPermaLink="true">https://shining-sakaeru.github.io/jekyll-webFont</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>Jekyll 따라하기(2) - Jekyll Modify and Publish</title>
+        
+          <description>&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt;Jekyll 따라하기의 목차입니다.&lt;/span&gt;&lt;/p&gt;
+&lt;ul class=&quot;table-of-contents-list&quot;&gt;
+    &lt;li&gt;&lt;a href=&quot;./jekyll-start&quot;&gt;Jekyll 따라하기(0) - Jekyll Start&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./jekyll-setup&quot;&gt;Jekyll 따라하기(1) - Jekyll Setup&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./jekyll-modifyAndPublish&quot;&gt;Jekyll 따라하기(2) - Jekyll Modify and Publish&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./jekyll-webFont&quot;&gt;Jekyll 따라하기(3) - Jekyll Web Font&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./jekyll-highlighting&quot;&gt;Jekyll 따라하기(4) - Highlighting with rouge&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./jekyll-searchFunction&quot;&gt;Jekyll 따라하기(5) - Search function with lunr.js&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./jekyll-googleSearchConsole&quot;&gt;Jekyll 따라하기(6) - Google Search Console&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./jekyll-gitHubGist&quot;&gt;Jekyll 따라하기(7) - GitHub Gist&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./jekyll-travisCI&quot;&gt;Jekyll 따라하기(8) - Travis CI&lt;/a&gt;&lt;/li&gt;
+
+&lt;/ul&gt;
+
+</description>
+        
+        <pubDate>Fri, 08 Jan 2021 18:14:00 +0000</pubDate>
+        <link>
+        https://shining-sakaeru.github.io/jekyll-modifyAndPublish</link>
+        <guid isPermaLink="true">https://shining-sakaeru.github.io/jekyll-modifyAndPublish</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>Jekyll 따라하기(1) - Jekyll Setup</title>
+        
+          <description>&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt;Jekyll 따라하기의 목차입니다.&lt;/span&gt;&lt;/p&gt;
+&lt;ul class=&quot;table-of-contents-list&quot;&gt;
+    &lt;li&gt;&lt;a href=&quot;./jekyll-start&quot;&gt;Jekyll 따라하기(0) - Jekyll Start&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./jekyll-setup&quot;&gt;Jekyll 따라하기(1) - Jekyll Setup&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./jekyll-modifyAndPublish&quot;&gt;Jekyll 따라하기(2) - Jekyll Modify and Publish&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./jekyll-webFont&quot;&gt;Jekyll 따라하기(3) - Jekyll Web Font&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./jekyll-highlighting&quot;&gt;Jekyll 따라하기(4) - Highlighting with rouge&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./jekyll-searchFunction&quot;&gt;Jekyll 따라하기(5) - Search function with lunr.js&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./jekyll-googleSearchConsole&quot;&gt;Jekyll 따라하기(6) - Google Search Console&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./jekyll-gitHubGist&quot;&gt;Jekyll 따라하기(7) - GitHub Gist&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./jekyll-travisCI&quot;&gt;Jekyll 따라하기(8) - Travis CI&lt;/a&gt;&lt;/li&gt;
+
+&lt;/ul&gt;
+
+</description>
+        
+        <pubDate>Sat, 02 Jan 2021 23:31:00 +0000</pubDate>
         <link>
         https://shining-sakaeru.github.io/jekyll-setup</link>
         <guid isPermaLink="true">https://shining-sakaeru.github.io/jekyll-setup</guid>
@@ -27,17 +224,25 @@
     
       
       <item>
-        <title>Jekyll 강좌(0) - Jekyll Start</title>
+        <title>Jekyll 따라하기(0) - Jekyll Start</title>
         
-          <description>&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt;Jekyll 강좌는 여러 절로 구성되어 있습니다. &lt;/span&gt;&lt;/p&gt;
+          <description>&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt;Jekyll 따라하기의 목차입니다.&lt;/span&gt;&lt;/p&gt;
 &lt;ul class=&quot;table-of-contents-list&quot;&gt;
-    &lt;li&gt;&lt;a href=&quot;./jekyll-start&quot;&gt;Jekyll 강좌(0) - Jekyll Start&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;./jekyll-setup&quot;&gt;Jekyll 강좌(1) - Jekyll Setup&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./jekyll-start&quot;&gt;Jekyll 따라하기(0) - Jekyll Start&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./jekyll-setup&quot;&gt;Jekyll 따라하기(1) - Jekyll Setup&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./jekyll-modifyAndPublish&quot;&gt;Jekyll 따라하기(2) - Jekyll Modify and Publish&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./jekyll-webFont&quot;&gt;Jekyll 따라하기(3) - Jekyll Web Font&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./jekyll-highlighting&quot;&gt;Jekyll 따라하기(4) - Highlighting with rouge&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./jekyll-searchFunction&quot;&gt;Jekyll 따라하기(5) - Search function with lunr.js&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./jekyll-googleSearchConsole&quot;&gt;Jekyll 따라하기(6) - Google Search Console&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./jekyll-gitHubGist&quot;&gt;Jekyll 따라하기(7) - GitHub Gist&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./jekyll-travisCI&quot;&gt;Jekyll 따라하기(8) - Travis CI&lt;/a&gt;&lt;/li&gt;
+
 &lt;/ul&gt;
 
 </description>
         
-        <pubDate>Sat, 01 Jan 2022 23:31:00 +0000</pubDate>
+        <pubDate>Fri, 01 Jan 2021 23:31:00 +0000</pubDate>
         <link>
         https://shining-sakaeru.github.io/jekyll-start</link>
         <guid isPermaLink="true">https://shining-sakaeru.github.io/jekyll-start</guid>
@@ -56,21 +261,6 @@
         <link>
         https://shining-sakaeru.github.io/common-firstPost</link>
         <guid isPermaLink="true">https://shining-sakaeru.github.io/common-firstPost</guid>
-      </item>
-      
-    
-      
-      <item>
-        <title>Gettysburg Address</title>
-        
-          <description>&lt;p&gt;Fourscore and seven years ago our fathers brought forth on this continent, a new nation, conceived in Liberty, and dedicated to the proposition that all men are created equal.&lt;/p&gt;
-
-</description>
-        
-        <pubDate>Thu, 19 Nov 1863 10:18:00 +0000</pubDate>
-        <link>
-        https://shining-sakaeru.github.io/gettysburg-address</link>
-        <guid isPermaLink="true">https://shining-sakaeru.github.io/gettysburg-address</guid>
       </item>
       
     
