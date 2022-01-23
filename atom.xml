@@ -8,6 +8,33 @@
     
       
       <item>
+        <title>SEO Tool (Search Engine Optimization)</title>
+        
+          <description>&lt;!-- &lt;span class=&quot;table-of-contents-list&quot;&gt;Jekyll 따라하기의 목차입니다.&lt;/span&gt;
+&lt;ul class=&quot;table-of-contents-list&quot;&gt;
+    &lt;li&gt;&lt;a href=&quot;./jekyll-start&quot;&gt;Jekyll 따라하기(0) - Jekyll Start&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./jekyll-setup&quot;&gt;Jekyll 따라하기(1) - Jekyll Setup&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./jekyll-modifyAndPublish&quot;&gt;Jekyll 따라하기(2) - Jekyll Modify and Publish&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./jekyll-webFont&quot;&gt;Jekyll 따라하기(3) - Jekyll Web Font&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./jekyll-highlighting&quot;&gt;Jekyll 따라하기(4) - Highlighting with rouge&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./jekyll-searchFunction&quot;&gt;Jekyll 따라하기(5) - Search function with lunr.js&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./jekyll-googleSearchConsole&quot;&gt;Jekyll 따라하기(6) - Google Search Console&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./jekyll-gitHubGist&quot;&gt;Jekyll 따라하기(7) - GitHub Gist&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./jekyll-travisCI&quot;&gt;Jekyll 따라하기(8) - Travis CI&lt;/a&gt;&lt;/li&gt;
+
+&lt;/ul&gt; --&gt;
+
+</description>
+        
+        <pubDate>Sat, 23 Jan 2021 12:04:00 +0000</pubDate>
+        <link>
+        https://shining-sakaeru.github.io/web-SEO</link>
+        <guid isPermaLink="true">https://shining-sakaeru.github.io/web-SEO</guid>
+      </item>
+      
+    
+      
+      <item>
         <title>Jekyll 따라하기(8) - Travis CI</title>
         
           <description>&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt;Jekyll 따라하기의 목차입니다.&lt;/span&gt;&lt;/p&gt;

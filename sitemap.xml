@@ -4,6 +4,22 @@
         xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     
     <url>
+        <loc>https://shining-sakaeru.github.io/web-SEO.html</loc>
+        
+        <lastmod>2021-01-23T12:04:00+00:00</lastmod>
+        
+
+        
+        <changefreq>weekly</changefreq>
+        
+
+        
+        <priority>0.5</priority>
+        
+
+    </url>
+    
+    <url>
         <loc>https://shining-sakaeru.github.io/jekyll-travisCI.html</loc>
         
         <lastmod>2021-01-08T19:39:00+00:00</lastmod>

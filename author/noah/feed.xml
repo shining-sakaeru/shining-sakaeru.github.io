@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator>
   <link href="https://shining-sakaeru.github.io/author/noah/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://shining-sakaeru.github.io/" rel="alternate" type="text/html" />
-  <updated>2022-01-08T11:42:43+00:00</updated>
+  <updated>2022-01-23T03:36:11+00:00</updated>
   <id>https://shining-sakaeru.github.io/author/noah/feed.xml</id>
 
   
@@ -30,6 +30,82 @@
   
   
 
+  
+    <entry>
+      <title type="html">SEO Tool (Search Engine Optimization)</title>
+      <link href="https://shining-sakaeru.github.io/web-SEO" rel="alternate" type="text/html" title="SEO Tool (Search Engine Optimization)" />
+      <published>2021-01-23T12:04:00+00:00</published>
+      <updated>2021-01-23T12:04:00+00:00</updated>
+      <id>https://shining-sakaeru.github.io/web-SEO</id>
+      <content type="html" xml:base="https://shining-sakaeru.github.io/web-SEO">&lt;!-- &lt;span class=&quot;table-of-contents-list&quot;&gt;Jekyll 따라하기의 목차입니다.&lt;/span&gt;
+&lt;ul class=&quot;table-of-contents-list&quot;&gt;
+    &lt;li&gt;&lt;a href=&quot;./jekyll-start&quot;&gt;Jekyll 따라하기(0) - Jekyll Start&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./jekyll-setup&quot;&gt;Jekyll 따라하기(1) - Jekyll Setup&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./jekyll-modifyAndPublish&quot;&gt;Jekyll 따라하기(2) - Jekyll Modify and Publish&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./jekyll-webFont&quot;&gt;Jekyll 따라하기(3) - Jekyll Web Font&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./jekyll-highlighting&quot;&gt;Jekyll 따라하기(4) - Highlighting with rouge&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./jekyll-searchFunction&quot;&gt;Jekyll 따라하기(5) - Search function with lunr.js&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./jekyll-googleSearchConsole&quot;&gt;Jekyll 따라하기(6) - Google Search Console&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./jekyll-gitHubGist&quot;&gt;Jekyll 따라하기(7) - GitHub Gist&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./jekyll-travisCI&quot;&gt;Jekyll 따라하기(8) - Travis CI&lt;/a&gt;&lt;/li&gt;
+
+&lt;/ul&gt; --&gt;
+
+&lt;p&gt;SEO Tool 소개입니다.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Reference: https://en.wikipedia.org/wiki/Search_engine_optimization&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;SEO. Search Engine Optimization&lt;br /&gt;
+한국어로 “검색 엔진 최적화 기술”&lt;/p&gt;
+
+&lt;p&gt;Wikipedia define은 아래와 같습니다.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Search engine optimization (SEO) is the process of improving the quality and quantity of website traffic to a website or a web page from search engines.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;웹 검색 엔진에서 트래픽의 질과 양을 향상시키기 위한 프로세스.&lt;/p&gt;
+
+&lt;p&gt;이번에는 https://seositecheckup.com/ 를 이용하여 확인해보려 합니다.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;본 blog의 점수.
+Issue. 그 이유. 수정 방법이 보기좋게 나와있어 좋네요.
+&lt;img src=&quot;./assets/built/images/setsitecheckup.png&quot; alt=&quot;setsitecheckup&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;url만 입력하고 진행하면 특이사항 없이 잘 작동하고
+문제점들은 시간될때 수정 해야겠습니다.&lt;/p&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>noah</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="web" />
+      
+
+      
+        <summary type="html"></summary>
+      
+
+      
+      
+    </entry>
   
     <entry>
       <title type="html">Jekyll 따라하기(8) - Travis CI</title>
@@ -928,51 +1004,6 @@ googling으로 해결이 불가능 했습니다.&lt;br /&gt;
 
       
         <summary type="html">Jekyll 따라하기의 목차입니다. Jekyll 따라하기(0) - Jekyll Start Jekyll 따라하기(1) - Jekyll Setup Jekyll 따라하기(2) - Jekyll Modify and Publish Jekyll 따라하기(3) - Jekyll Web Font Jekyll 따라하기(4) - Highlighting with rouge Jekyll 따라하기(5) - Search function with lunr.js Jekyll 따라하기(6) - Google Search Console Jekyll 따라하기(7) - GitHub Gist Jekyll 따라하기(8) - Travis CI</summary>
-      
-
-      
-      
-    </entry>
-  
-    <entry>
-      <title type="html">첫 블로그 포스트</title>
-      <link href="https://shining-sakaeru.github.io/common-firstPost" rel="alternate" type="text/html" title="첫 블로그 포스트" />
-      <published>2021-01-01T22:21:00+00:00</published>
-      <updated>2021-01-01T22:21:00+00:00</updated>
-      <id>https://shining-sakaeru.github.io/common-firstPost</id>
-      <content type="html" xml:base="https://shining-sakaeru.github.io/common-firstPost">&lt;p&gt;첫 포스팅 입니다.&lt;/p&gt;
-
-&lt;p&gt;제가 관심있는 영역들에 대한 포스트를 할 생각입니다.&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Engineering&lt;/li&gt;
-  &lt;li&gt;Robot&lt;/li&gt;
-  &lt;li&gt;AI&lt;/li&gt;
-  &lt;li&gt;Server&lt;/li&gt;
-  &lt;li&gt;Linux&lt;/li&gt;
-  &lt;li&gt;개인적인 관심사들&lt;/li&gt;
-&lt;/ul&gt;</content>
-
-      
-      
-      
-      
-      
-
-      <author>
-          <name>noah</name>
-        
-        
-      </author>
-
-      
-
-      
-        <category term="common" />
-      
-
-      
-        <summary type="html">첫 포스팅 입니다.</summary>
       
 
       
