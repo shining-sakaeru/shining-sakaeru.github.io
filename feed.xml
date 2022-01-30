@@ -1,4 +1,40 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="https://shining-sakaeru.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://shining-sakaeru.github.io/" rel="alternate" type="text/html" /><updated>2022-01-23T03:36:11+00:00</updated><id>https://shining-sakaeru.github.io/feed.xml</id><title type="html">Noah’s Blog</title><subtitle>The engineer.</subtitle><entry><title type="html">SEO Tool (Search Engine Optimization)</title><link href="https://shining-sakaeru.github.io/web-SEO" rel="alternate" type="text/html" title="SEO Tool (Search Engine Optimization)" /><published>2021-01-23T12:04:00+00:00</published><updated>2021-01-23T12:04:00+00:00</updated><id>https://shining-sakaeru.github.io/web-SEO</id><content type="html" xml:base="https://shining-sakaeru.github.io/web-SEO">&lt;!-- &lt;span class=&quot;table-of-contents-list&quot;&gt;Jekyll 따라하기의 목차입니다.&lt;/span&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="https://shining-sakaeru.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://shining-sakaeru.github.io/" rel="alternate" type="text/html" /><updated>2022-01-30T02:22:30+00:00</updated><id>https://shining-sakaeru.github.io/feed.xml</id><title type="html">Noah’s Blog</title><subtitle>The engineer.</subtitle><entry><title type="html">Scikit-learn</title><link href="https://shining-sakaeru.github.io/ai-scikit-learn" rel="alternate" type="text/html" title="Scikit-learn" /><published>2021-01-30T11:19:00+00:00</published><updated>2021-01-30T11:19:00+00:00</updated><id>https://shining-sakaeru.github.io/ai-scikit-learn</id><content type="html" xml:base="https://shining-sakaeru.github.io/ai-scikit-learn">&lt;!-- &lt;span class=&quot;table-of-contents-list&quot;&gt;Jekyll 따라하기의 목차입니다.&lt;/span&gt;
+&lt;ul class=&quot;table-of-contents-list&quot;&gt;
+    &lt;li&gt;&lt;a href=&quot;./jekyll-start&quot;&gt;Jekyll 따라하기(0) - Jekyll Start&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./jekyll-setup&quot;&gt;Jekyll 따라하기(1) - Jekyll Setup&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./jekyll-modifyAndPublish&quot;&gt;Jekyll 따라하기(2) - Jekyll Modify and Publish&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./jekyll-webFont&quot;&gt;Jekyll 따라하기(3) - Jekyll Web Font&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./jekyll-highlighting&quot;&gt;Jekyll 따라하기(4) - Highlighting with rouge&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./jekyll-searchFunction&quot;&gt;Jekyll 따라하기(5) - Search function with lunr.js&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./jekyll-googleSearchConsole&quot;&gt;Jekyll 따라하기(6) - Google Search Console&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./jekyll-gitHubGist&quot;&gt;Jekyll 따라하기(7) - GitHub Gist&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./jekyll-travisCI&quot;&gt;Jekyll 따라하기(8) - Travis CI&lt;/a&gt;&lt;/li&gt;
+
+&lt;/ul&gt; --&gt;
+
+&lt;p&gt;Information about Machine Learning Algorithm.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Reference: https://scikit-learn.org/&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;Python에서 사용하는 머신러닝 라이브러리이다.
+github에 오픈 소스로 공개되어 있다&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;URL : https://github.com/scikit-learn/scikit-learn&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;Library import&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;import sklearn
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;!-- ![setsitecheckup](./assets/built/images/setsitecheckup.png) --&gt;</content><author><name>noah</name></author><category term="ai" /><summary type="html"></summary></entry><entry><title type="html">SEO Tool (Search Engine Optimization)</title><link href="https://shining-sakaeru.github.io/web-SEO" rel="alternate" type="text/html" title="SEO Tool (Search Engine Optimization)" /><published>2021-01-23T12:04:00+00:00</published><updated>2021-01-23T12:04:00+00:00</updated><id>https://shining-sakaeru.github.io/web-SEO</id><content type="html" xml:base="https://shining-sakaeru.github.io/web-SEO">&lt;!-- &lt;span class=&quot;table-of-contents-list&quot;&gt;Jekyll 따라하기의 목차입니다.&lt;/span&gt;
 &lt;ul class=&quot;table-of-contents-list&quot;&gt;
     &lt;li&gt;&lt;a href=&quot;./jekyll-start&quot;&gt;Jekyll 따라하기(0) - Jekyll Start&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./jekyll-setup&quot;&gt;Jekyll 따라하기(1) - Jekyll Setup&lt;/a&gt;&lt;/li&gt;
@@ -617,24 +653,4 @@ googling으로 해결이 불가능 했습니다.&lt;br /&gt;
 
 &lt;hr /&gt;
 
-&lt;p&gt;특이사항은 따로 없었습니다.&lt;/p&gt;</content><author><name>noah</name></author><category term="jekyll" /><summary type="html">Jekyll 따라하기의 목차입니다. Jekyll 따라하기(0) - Jekyll Start Jekyll 따라하기(1) - Jekyll Setup Jekyll 따라하기(2) - Jekyll Modify and Publish Jekyll 따라하기(3) - Jekyll Web Font Jekyll 따라하기(4) - Highlighting with rouge Jekyll 따라하기(5) - Search function with lunr.js Jekyll 따라하기(6) - Google Search Console Jekyll 따라하기(7) - GitHub Gist Jekyll 따라하기(8) - Travis CI</summary></entry><entry><title type="html">Jekyll 따라하기(0) - Jekyll Start</title><link href="https://shining-sakaeru.github.io/jekyll-start" rel="alternate" type="text/html" title="Jekyll 따라하기(0) - Jekyll Start" /><published>2021-01-01T23:31:00+00:00</published><updated>2021-01-01T23:31:00+00:00</updated><id>https://shining-sakaeru.github.io/jekyll-start</id><content type="html" xml:base="https://shining-sakaeru.github.io/jekyll-start">&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt;Jekyll 따라하기의 목차입니다.&lt;/span&gt;&lt;/p&gt;
-&lt;ul class=&quot;table-of-contents-list&quot;&gt;
-    &lt;li&gt;&lt;a href=&quot;./jekyll-start&quot;&gt;Jekyll 따라하기(0) - Jekyll Start&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;./jekyll-setup&quot;&gt;Jekyll 따라하기(1) - Jekyll Setup&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;./jekyll-modifyAndPublish&quot;&gt;Jekyll 따라하기(2) - Jekyll Modify and Publish&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;./jekyll-webFont&quot;&gt;Jekyll 따라하기(3) - Jekyll Web Font&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;./jekyll-highlighting&quot;&gt;Jekyll 따라하기(4) - Highlighting with rouge&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;./jekyll-searchFunction&quot;&gt;Jekyll 따라하기(5) - Search function with lunr.js&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;./jekyll-googleSearchConsole&quot;&gt;Jekyll 따라하기(6) - Google Search Console&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;./jekyll-gitHubGist&quot;&gt;Jekyll 따라하기(7) - GitHub Gist&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;./jekyll-travisCI&quot;&gt;Jekyll 따라하기(8) - Travis CI&lt;/a&gt;&lt;/li&gt;
-
-&lt;/ul&gt;
-
-&lt;p&gt;github blog를 생성하면서 사용하게 된 jekyll에 대한 post 입니다.&lt;br /&gt;
-얼큰우동님 블로그(https://moon9342.github.io/)를 참고하여 진행했습니다.&lt;/p&gt;
-
-&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;helloWorld&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;code&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;nx&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;Hello World&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>noah</name></author><category term="jekyll" /><summary type="html">Jekyll 따라하기의 목차입니다. Jekyll 따라하기(0) - Jekyll Start Jekyll 따라하기(1) - Jekyll Setup Jekyll 따라하기(2) - Jekyll Modify and Publish Jekyll 따라하기(3) - Jekyll Web Font Jekyll 따라하기(4) - Highlighting with rouge Jekyll 따라하기(5) - Search function with lunr.js Jekyll 따라하기(6) - Google Search Console Jekyll 따라하기(7) - GitHub Gist Jekyll 따라하기(8) - Travis CI</summary></entry></feed>
+&lt;p&gt;특이사항은 따로 없었습니다.&lt;/p&gt;</content><author><name>noah</name></author><category term="jekyll" /><summary type="html">Jekyll 따라하기의 목차입니다. Jekyll 따라하기(0) - Jekyll Start Jekyll 따라하기(1) - Jekyll Setup Jekyll 따라하기(2) - Jekyll Modify and Publish Jekyll 따라하기(3) - Jekyll Web Font Jekyll 따라하기(4) - Highlighting with rouge Jekyll 따라하기(5) - Search function with lunr.js Jekyll 따라하기(6) - Google Search Console Jekyll 따라하기(7) - GitHub Gist Jekyll 따라하기(8) - Travis CI</summary></entry></feed>
