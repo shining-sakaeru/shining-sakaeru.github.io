@@ -4,6 +4,22 @@
         xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     
     <url>
+        <loc>https://shining-sakaeru.github.io/web-react-fetch.html</loc>
+        
+        <lastmod>2021-02-03T23:21:00+00:00</lastmod>
+        
+
+        
+        <changefreq>weekly</changefreq>
+        
+
+        
+        <priority>0.5</priority>
+        
+
+    </url>
+    
+    <url>
         <loc>https://shining-sakaeru.github.io/ai-scikit-learn.html</loc>
         
         <lastmod>2021-01-30T11:19:00+00:00</lastmod>

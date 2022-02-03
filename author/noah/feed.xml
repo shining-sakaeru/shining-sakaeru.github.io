@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator>
   <link href="https://shining-sakaeru.github.io/author/noah/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://shining-sakaeru.github.io/" rel="alternate" type="text/html" />
-  <updated>2022-01-30T02:22:30+00:00</updated>
+  <updated>2022-02-03T14:37:28+00:00</updated>
   <id>https://shining-sakaeru.github.io/author/noah/feed.xml</id>
 
   
@@ -30,6 +30,69 @@
   
   
 
+  
+    <entry>
+      <title type="html">React - fetch</title>
+      <link href="https://shining-sakaeru.github.io/web-react-fetch" rel="alternate" type="text/html" title="React - fetch" />
+      <published>2021-02-03T23:21:00+00:00</published>
+      <updated>2021-02-03T23:21:00+00:00</updated>
+      <id>https://shining-sakaeru.github.io/web-react-fetch</id>
+      <content type="html" xml:base="https://shining-sakaeru.github.io/web-react-fetch">&lt;!-- &lt;span class=&quot;table-of-contents-list&quot;&gt;Jekyll 따라하기의 목차입니다.&lt;/span&gt;
+&lt;ul class=&quot;table-of-contents-list&quot;&gt;
+    &lt;li&gt;&lt;a href=&quot;./jekyll-start&quot;&gt;Jekyll 따라하기(0) - Jekyll Start&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./jekyll-setup&quot;&gt;Jekyll 따라하기(1) - Jekyll Setup&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./jekyll-modifyAndPublish&quot;&gt;Jekyll 따라하기(2) - Jekyll Modify and Publish&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./jekyll-webFont&quot;&gt;Jekyll 따라하기(3) - Jekyll Web Font&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./jekyll-highlighting&quot;&gt;Jekyll 따라하기(4) - Highlighting with rouge&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./jekyll-searchFunction&quot;&gt;Jekyll 따라하기(5) - Search function with lunr.js&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./jekyll-googleSearchConsole&quot;&gt;Jekyll 따라하기(6) - Google Search Console&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./jekyll-gitHubGist&quot;&gt;Jekyll 따라하기(7) - GitHub Gist&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./jekyll-travisCI&quot;&gt;Jekyll 따라하기(8) - Travis CI&lt;/a&gt;&lt;/li&gt;
+
+&lt;/ul&gt; --&gt;
+
+&lt;p&gt;API를 느져오는 React 기능. fetch&lt;/p&gt;
+
+&lt;!-- - Reference: https://en.wikipedia.org/wiki/Search_engine_optimization --&gt;
+
+&lt;hr /&gt;
+&lt;p&gt;url에서 fetch를 사용하여 json 정보를 끌어와 보여줌.&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;fetch(&quot;url&quot;)
+  .then((response) =&amp;gt; response.json())
+  .then((data) =&amp;gt; console.log(data));
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;화면에 뿌려줄 때, useState와 map 기능을 사용하여 진행하려는데
+마음대로 되지 않아 시도중.. 성공 후 업데이트 하려합니다.&lt;/p&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>noah</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="web" />
+      
+
+      
+        <summary type="html"></summary>
+      
+
+      
+      
+    </entry>
   
     <entry>
       <title type="html">Scikit-learn</title>
@@ -904,101 +967,6 @@ push 하면 10-20분 뒤 홈페이지에서 확인 가능&lt;/p&gt;
 &lt;p&gt;gulp 설치 시 알수 없는 에러들이 많았는데,&lt;br /&gt;
 googling으로 해결이 불가능 했습니다.&lt;br /&gt;
 해결책으로 관련 package 싹 밀고 재설치 하니 잘 동작했습니다.&lt;/p&gt;</content>
-
-      
-      
-      
-      
-      
-
-      <author>
-          <name>noah</name>
-        
-        
-      </author>
-
-      
-
-      
-        <category term="jekyll" />
-      
-
-      
-        <summary type="html">Jekyll 따라하기의 목차입니다. Jekyll 따라하기(0) - Jekyll Start Jekyll 따라하기(1) - Jekyll Setup Jekyll 따라하기(2) - Jekyll Modify and Publish Jekyll 따라하기(3) - Jekyll Web Font Jekyll 따라하기(4) - Highlighting with rouge Jekyll 따라하기(5) - Search function with lunr.js Jekyll 따라하기(6) - Google Search Console Jekyll 따라하기(7) - GitHub Gist Jekyll 따라하기(8) - Travis CI</summary>
-      
-
-      
-      
-    </entry>
-  
-    <entry>
-      <title type="html">Jekyll 따라하기(1) - Jekyll Setup</title>
-      <link href="https://shining-sakaeru.github.io/jekyll-setup" rel="alternate" type="text/html" title="Jekyll 따라하기(1) - Jekyll Setup" />
-      <published>2021-01-02T23:31:00+00:00</published>
-      <updated>2021-01-02T23:31:00+00:00</updated>
-      <id>https://shining-sakaeru.github.io/jekyll-setup</id>
-      <content type="html" xml:base="https://shining-sakaeru.github.io/jekyll-setup">&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt;Jekyll 따라하기의 목차입니다.&lt;/span&gt;&lt;/p&gt;
-&lt;ul class=&quot;table-of-contents-list&quot;&gt;
-    &lt;li&gt;&lt;a href=&quot;./jekyll-start&quot;&gt;Jekyll 따라하기(0) - Jekyll Start&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;./jekyll-setup&quot;&gt;Jekyll 따라하기(1) - Jekyll Setup&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;./jekyll-modifyAndPublish&quot;&gt;Jekyll 따라하기(2) - Jekyll Modify and Publish&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;./jekyll-webFont&quot;&gt;Jekyll 따라하기(3) - Jekyll Web Font&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;./jekyll-highlighting&quot;&gt;Jekyll 따라하기(4) - Highlighting with rouge&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;./jekyll-searchFunction&quot;&gt;Jekyll 따라하기(5) - Search function with lunr.js&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;./jekyll-googleSearchConsole&quot;&gt;Jekyll 따라하기(6) - Google Search Console&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;./jekyll-gitHubGist&quot;&gt;Jekyll 따라하기(7) - GitHub Gist&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;./jekyll-travisCI&quot;&gt;Jekyll 따라하기(8) - Travis CI&lt;/a&gt;&lt;/li&gt;
-
-&lt;/ul&gt;
-
-&lt;p&gt;github blog 사용을 위한 Jykell Setup 과정입니다.&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Reference: https://moon9342.github.io/jekyll-start&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;hr /&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;
-    &lt;p&gt;Ruby 설치&lt;/p&gt;
-
-    &lt;blockquote&gt;
-      &lt;p&gt;https://rubyinstaller.org/downloads/&lt;/p&gt;
-    &lt;/blockquote&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;bundler 설치 및 Local Server 실행&lt;/p&gt;
-
-    &lt;blockquote&gt;
-      &lt;p&gt;사용할 폴더 생성&lt;/p&gt;
-    &lt;/blockquote&gt;
-
-    &lt;blockquote&gt;
-      &lt;p&gt;Jasper2 theme download (http://jekyllthemes.org/themes/jasper2/)&lt;/p&gt;
-    &lt;/blockquote&gt;
-
-    &lt;blockquote&gt;
-      &lt;p&gt;gem install bundler&lt;/p&gt;
-    &lt;/blockquote&gt;
-
-    &lt;blockquote&gt;
-      &lt;p&gt;bundle install&lt;/p&gt;
-    &lt;/blockquote&gt;
-
-    &lt;blockquote&gt;
-      &lt;p&gt;bundle exec jekyll serve&lt;/p&gt;
-    &lt;/blockquote&gt;
-
-    &lt;blockquote&gt;
-      &lt;p&gt;http://localhost:4000 Local 홈페이지 접속&lt;/p&gt;
-    &lt;/blockquote&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;특이사항은 따로 없었습니다.&lt;/p&gt;</content>
 
       
       
