@@ -1,8 +1,5 @@
 User-agent: *
-Sitemap: http://localhost:2368/sitemap.xml
-Disallow: /ghost/
-Disallow: /email/
-Disallow: /members/api/comments/counts/
-Disallow: /r/
-Disallow: /webmentions/receive/
-Disallow: /.ghost/analytics/api/
+Allow: /
+Disallow: /privateData/
+
+Sitemap: https://shining-sakaeru.github.io/sitemap.xml
