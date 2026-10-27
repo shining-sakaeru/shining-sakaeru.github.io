@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>[SK하이닉스 AI 해커톤 2026 1편] 내가 준비한 AI 문제 해결과 실제 해커톤 시험의 간극</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="preload" as="style" href="/assets/built/screen.css?v=QNPN-eKOOxYMpyK5">
+    <link rel="preload" as="script" href="/assets/built/source.js?v=33sa4-qy5thAFPQH">
+    
+    <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/inter-roman.woff2?v=OecsB5TBLy27FKD2" crossorigin="anonymous">
+<style>
+    @font-face {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 100 900;
+        font-display: optional;
+        src: url(/assets/fonts/inter-roman.woff2?v=OecsB5TBLy27FKD2) format("woff2");
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+    }
+</style>
+
+    <link rel="stylesheet" type="text/css" href="/assets/built/screen.css?v=QNPN-eKOOxYMpyK5">
+
+    <style>
+        :root {
+            --background-color: #f7f2ed
+        }
+    </style>
+
+    <script>
+        /* The script for calculating the color contrast has been taken from
+        https://gomakethings.com/dynamically-changing-the-text-color-based-on-background-color-contrast-with-vanilla-js/ */
+        var accentColor = getComputedStyle(document.documentElement).getPropertyValue('--background-color');
+        accentColor = accentColor.trim().slice(1);
+
+        if (accentColor.length === 3) {
+            accentColor = accentColor[0] + accentColor[0] + accentColor[1] + accentColor[1] + accentColor[2] + accentColor[2];
+        }
+
+        var r = parseInt(accentColor.substr(0, 2), 16);
+        var g = parseInt(accentColor.substr(2, 2), 16);
+        var b = parseInt(accentColor.substr(4, 2), 16);
+        var yiq = ((r * 299) + (g * 587) + (b * 114)) / 1000;
+        var textColor = (yiq >= 128) ? 'dark' : 'light';
+
+        document.documentElement.className = `has-${textColor}-text`;
+    </script>
+
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8445796587035649" crossorigin="anonymous"></script>
+
+    <meta name="description" content="시스템·임베디드 현장에 적용하려 했던 AI AX 구상과 SK하이닉스 AI 해커톤 2026 예선에서 마주한 제한된 평가 환경의 간극을 솔직하게 기록한다.">
+    <link rel="canonical" href="https://shining-sakaeru.github.io/sk-hynix-ai-hackathon-embedded-system-engineer/">
+    <link rel="alternate" type="text/markdown" href="https://shining-sakaeru.github.io/sk-hynix-ai-hackathon-embedded-system-engineer.md">
+    <meta name="referrer" content="no-referrer-when-downgrade">
+    
+    <meta property="og:site_name" content="Noah&#x27;s Blog">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="[SK하이닉스 AI 해커톤 2026 1편] 내가 준비한 AI 문제 해결과 실제 해커톤 시험의 간극">
+    <meta property="og:description" content="시스템·임베디드 현장에 적용하려 했던 AI AX 구상과 SK하이닉스 AI 해커톤 2026 예선에서 마주한 제한된 평가 환경의 간극을 솔직하게 기록한다.">
+    <meta property="og:url" content="https://shining-sakaeru.github.io/sk-hynix-ai-hackathon-embedded-system-engineer/">
+    <meta property="og:image" content="https://shining-sakaeru.github.io/content/images/2026/10/series-openhands.png">
+    <meta property="article:published_time" content="2026-10-27T01:00:00.000Z">
+    <meta property="article:modified_time" content="2026-10-27T01:00:00.000Z">
+    <meta property="article:tag" content="SK하이닉스 AI 해커톤">
+    <meta property="article:tag" content="AI Native">
+    <meta property="article:tag" content="임베디드">
+    <meta property="article:tag" content="시스템 엔지니어링">
+    <meta property="article:tag" content="AI AX">
+    
+    <meta property="article:publisher" content="https://www.facebook.com/ghost">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="[SK하이닉스 AI 해커톤 2026 1편] 내가 준비한 AI 문제 해결과 실제 해커톤 시험의 간극">
+    <meta name="twitter:description" content="시스템·임베디드 현장에 적용하려 했던 AI AX 구상과 SK하이닉스 AI 해커톤 2026 예선에서 마주한 제한된 평가 환경의 간극을 솔직하게 기록한다.">
+    <meta name="twitter:url" content="https://shining-sakaeru.github.io/sk-hynix-ai-hackathon-embedded-system-engineer/">
+    <meta name="twitter:image" content="https://shining-sakaeru.github.io/content/images/2026/10/series-openhands.png">
+    <meta name="twitter:label1" content="Written by">
+    <meta name="twitter:data1" content="Noah Sim">
+    <meta name="twitter:label2" content="Filed under">
+    <meta name="twitter:data2" content="SK하이닉스 AI 해커톤, AI Native, 임베디드, 시스템 엔지니어링, AI AX">
+    <meta name="twitter:site" content="@ghost">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Noah's Blog",
+        "url": "https://shining-sakaeru.github.io/",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https://shining-sakaeru.github.io/favicon.ico",
+            "width": 48,
+            "height": 48
+        }
+    },
+    "author": {
+        "@type": "Person",
+        "name": "Noah Sim",
+        "url": "https://shining-sakaeru.github.io/author/noah/",
+        "sameAs": []
+    },
+    "headline": "[SK하이닉스 AI 해커톤 2026 1편] 내가 준비한 AI 문제 해결과 실제 해커톤 시험의 간극",
+    "url": "https://shining-sakaeru.github.io/sk-hynix-ai-hackathon-embedded-system-engineer/",
+    "datePublished": "2026-10-27T01:00:00.000Z",
+    "dateModified": "2026-10-27T01:00:00.000Z",
+    "image": {
+        "@type": "ImageObject",
+        "url": "https://shining-sakaeru.github.io/content/images/2026/10/series-openhands.png",
+        "width": 1200,
+        "height": 630
+    },
+    "keywords": "SK하이닉스 AI 해커톤, AI Native, 임베디드, 시스템 엔지니어링, AI AX",
+    "description": "시스템·임베디드 현장에 적용하려 했던 AI AX 구상과 SK하이닉스 AI 해커톤 2026 예선에서 마주한 제한된 평가 환경의 간극을 솔직하게 기록한다.",
+    "mainEntityOfPage": "https://shining-sakaeru.github.io/sk-hynix-ai-hackathon-embedded-system-engineer/"
+}
+    </script>
+
+    <meta name="generator" content="Ghost 6.67">
+    <link rel="alternate" type="application/rss+xml" title="Noah&#x27;s Blog" href="https://shining-sakaeru.github.io/rss/">
+    <script defer src="https://cdn.jsdelivr.net/ghost/portal@~2.71/umd/portal.min.js" data-i18n="true" data-ghost="https://shining-sakaeru.github.io/" data-key="33aac6ba9084fa3644388e277a" data-api="https://shining-sakaeru.github.io/ghost/api/content/" data-locale="en" crossorigin="anonymous"></script><style id="gh-members-styles">.gh-post-upgrade-cta-content,
+.gh-post-upgrade-cta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+    width: 100%;
+    color: #ffffff;
+    font-size: 16px;
+}
+
+.gh-post-upgrade-cta-content {
+    border-radius: 8px;
+    padding: 40px 4vw;
+}
+
+.gh-post-upgrade-cta h2 {
+    color: #ffffff;
+    font-size: 28px;
+    letter-spacing: -0.2px;
+    margin: 0;
+    padding: 0;
+}
+
+.gh-post-upgrade-cta p {
+    margin: 20px 0 0;
+    padding: 0;
+}
+
+.gh-post-upgrade-cta small {
+    font-size: 16px;
+    letter-spacing: -0.2px;
+}
+
+.gh-post-upgrade-cta a {
+    color: #ffffff;
+    cursor: pointer;
+    font-weight: 500;
+    box-shadow: none;
+    text-decoration: underline;
+}
+
+.gh-post-upgrade-cta a:hover {
+    color: #ffffff;
+    opacity: 0.8;
+    box-shadow: none;
+    text-decoration: underline;
+}
+
+.gh-post-upgrade-cta a.gh-btn {
+    display: block;
+    background: #ffffff;
+    text-decoration: none;
+    margin: 28px 0 0;
+    padding: 8px 18px;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.gh-post-upgrade-cta a.gh-btn:hover {
+    opacity: 0.92;
+}</style>
+    <script defer src="https://cdn.jsdelivr.net/ghost/sodo-search@~1.8/umd/sodo-search.min.js" data-key="33aac6ba9084fa3644388e277a" data-styles="https://cdn.jsdelivr.net/ghost/sodo-search@~1.8/umd/main.css" data-sodo-search="https://shining-sakaeru.github.io/" data-locale="en" crossorigin="anonymous"></script>
+    
+    <link href="https://shining-sakaeru.github.io/webmentions/receive/" rel="webmention">
+    <script defer src="/public/cards.min.js?v=ShRHxgy4po8zN-Wf"></script>
+    <link rel="stylesheet" type="text/css" href="/public/cards.min.css?v=WwnU9jw5ancNC8Gc">
+    <script defer src="/public/comment-counts.min.js?v=oFYkaGLdiMqB8VN9" data-ghost-comments-counts-api="https://shining-sakaeru.github.io/members/api/comments/counts/"></script>
+    <script defer src="/public/member-attribution.min.js?v=AKG4hWena9j3yX3I"></script><style>:root {--ghost-accent-color: #FF1A75;}</style>
+    
+<style>
+    :root {
+        --background-color: #f7f2ed !important;
+    }
+    body {
+        background-color: #f7f2ed !important;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif !important;
+    }
+    .gh-button, button.gh-button, a.gh-button {
+        background-color: #7e7e44 !important;
+        border-color: #7e7e44 !important;
+        color: #ffffff !important;
+    }
+</style>
+
+<style>@font-face{font-family:"Noto Sans KR";font-style:normal;font-weight:400;font-display:swap;src:url("/assets/fonts/notosanskr-400.ttf") format("truetype");}html body,html body *{font-family:"Noto Sans KR",Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif !important;}</style>
+</head>
+<body class="post-template tag-skhainigseu-ai-haekeoton tag-ai-native tag-imbedideu tag-siseutem-enjinieoring tag-ai-ax has-sans-title has-sans-body">
+
+<div class="gh-viewport">
+    
+    <header id="gh-navigation" class="gh-navigation is-middle-logo gh-outer">
+    <div class="gh-navigation-inner gh-inner">
+
+        <div class="gh-navigation-brand">
+            <a class="gh-navigation-logo is-title" href="https://shining-sakaeru.github.io">
+                    Noah&#x27;s Blog
+            </a>
+            <button class="gh-search gh-icon-button" aria-label="Search this site" data-ghost-search>
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" width="20" height="20"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg></button>            <button class="gh-burger gh-icon-button" aria-label="Menu">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 256 256"><path d="M224,128a8,8,0,0,1-8,8H40a8,8,0,0,1,0-16H216A8,8,0,0,1,224,128ZM40,72H216a8,8,0,0,0,0-16H40a8,8,0,0,0,0,16ZM216,184H40a8,8,0,0,0,0,16H216a8,8,0,0,0,0-16Z"></path></svg>                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 256 256"><path d="M205.66,194.34a8,8,0,0,1-11.32,11.32L128,139.31,61.66,205.66a8,8,0,0,1-11.32-11.32L116.69,128,50.34,61.66A8,8,0,0,1,61.66,50.34L128,116.69l66.34-66.35a8,8,0,0,1,11.32,11.32L139.31,128Z"></path></svg>            </button>
+        </div>
+
+        <nav class="gh-navigation-menu">
+            <ul class="nav">
+    <li class="nav-home"><a href="https://shining-sakaeru.github.io/">Home</a></li>
+    <li class="nav-about"><a href="https://shining-sakaeru.github.io/about/">About</a></li>
+</ul>
+
+        </nav>
+
+        <div class="gh-navigation-actions">
+                <button class="gh-search gh-icon-button" aria-label="Search this site" data-ghost-search>
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" width="20" height="20"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg></button>                <div class="gh-navigation-members">
+                            <a href="#/portal/signin" data-portal="signin">Sign in</a>
+                                <a class="gh-button" href="#/portal/signup" data-portal="signup">Subscribe</a>
+                </div>
+        </div>
+
+    </div>
+</header>
+
+    
+
+<main class="gh-main">
+
+    <article class="gh-article post tag-skhainigseu-ai-haekeoton tag-ai-native tag-imbedideu tag-siseutem-enjinieoring tag-ai-ax">
+
+        <header class="gh-article-header gh-canvas">
+
+                <a class="gh-article-tag" href="https://shining-sakaeru.github.io/tag/skhainigseu-ai-haekeoton/">SK하이닉스 AI 해커톤</a>
+            <h1 class="gh-article-title is-title">[SK하이닉스 AI 해커톤 2026 1편] 내가 준비한 AI 문제 해결과 실제 해커톤 시험의 간극</h1>
+                <p class="gh-article-excerpt is-body">시스템·임베디드 현장에 적용하려 했던 AI AX 구상과 SK하이닉스 AI 해커톤 2026 예선에서 마주한 제한된 평가 환경의 간극을 솔직하게 기록한다.</p>
+
+                <div class="gh-meta-share">
+                    <div class="gh-article-meta">
+                        <div class="gh-article-author-image instapaper_ignore">
+                                    <a href="/author/noah/"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M3.513 18.998C4.749 15.504 8.082 13 12 13s7.251 2.504 8.487 5.998C18.47 21.442 15.417 23 12 23s-6.47-1.558-8.487-4.002zM12 12c2.21 0 4-2.79 4-5s-1.79-4-4-4-4 1.79-4 4 1.79 5 4 5z" fill="#FFF"/></g></svg>
+</a>
+                        </div>
+                        <div class="gh-article-meta-wrapper">
+                            <h4 class="gh-article-author-name"><a href="/author/noah/">Noah Sim</a></h4>
+                            <div class="gh-article-meta-content">
+                                <time class="gh-article-meta-date" datetime="2026-10-27">27 Oct 2026</time>
+                                    <span class="gh-article-meta-length"><span class="bull">—</span> 9 min read</span>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#/share" class="gh-button gh-button-share">
+                        Share
+                    </a>
+                </div>
+
+                <figure class="gh-article-image">
+        <img
+            class="gh-feature-image"
+            srcset="/content/images/size/w320/2026/10/series-openhands.png 320w,
+                    /content/images/size/w600/2026/10/series-openhands.png 600w,
+                    /content/images/size/w960/2026/10/series-openhands.png 960w,
+                    /content/images/size/w1200/2026/10/series-openhands.png 1200w,
+                    /content/images/size/w2000/2026/10/series-openhands.png 2000w"
+            sizes="(max-width: 1200px) 100vw, 1120px"
+            src="/content/images/size/w1200/2026/10/series-openhands.png"
+            alt="[SK하이닉스 AI 해커톤 2026 1편] 내가 준비한 AI 문제 해결과 실제 해커톤 시험의 간극"
+        >
+    </figure>
+
+        </header>
+
+        <section class="gh-content gh-canvas is-body">
+            <blockquote><strong>이 글에서 답하려는 질문:</strong> 시스템·임베디드 엔지니어로서 준비한 AI AX 역량은 실제 해커톤 평가에서 얼마나 보여줄 수 있었을까?</blockquote><p>학력과 전공의 장벽을 넘어 오직 실력과 AI 활용 역량으로 평가받는 ‘SK하이닉스 AI 해커톤 2026’에 도전했다. 공식 홈페이지는 학력, 전공, 연차, 현재 직장과 무관하게 논리적인 AI 활용 능력과 문제 해결에 대한 집요함을 평가한다고 설명한다. 정형화된 스펙보다 실제 문제를 AI로 풀고 결과물로 증명하는 방식이라는 점이 인상적이었다.</p><p>전통적인 시스템·임베디드 엔지니어링 현장에는 복잡한 규격과 반복적인 문서 작업이 많다. 필자는 이 과정에서 “어떻게 하면 엔지니어링 현장에 AI를 실질적으로 녹여낼 수 있을까?”를 고민해 왔다. 단순히 챗봇을 사용하는 수준이 아니라, 실제 업무 흐름에 AI를 연결하는 AI AX(AI Transformation)가 필요하다고 생각했다.</p><p>비록 이번 예선에서는 선정되지 못했지만, 지원 준비 과정에서 앞으로 만들고 싶었던 AI AX의 방향은 더 선명해졌다. 다만 이 글에서 먼저 구분할 것이 있다. 아래 내용은 이미 구축을 완료한 사례가 아니라, 필자가 시스템·임베디드 현장의 병목을 해결하기 위해 추진하려 했던 구상이다. 그리고 바로 그 구상은 시험장에서 예상과 다른 질문을 만나게 됐다.</p><h2 id="%EA%B5%AC%ED%98%84%ED%95%98%EB%A0%A4-%ED%96%88%EB%8D%98-%EB%8F%84%EB%A9%94%EC%9D%B8-%ED%8A%B9%ED%99%94-ai-ax">구현하려 했던 도메인 특화 AI AX</h2><p>시스템 엔지니어링 현장에서는 ISO 26262 기능안전, Automotive SPICE, Polarion 요구사항 관리, SysML 시스템 설계, C/C++ 디버깅 과정에 많은 수작업이 들어간다. 요구사항 간 추적성을 확인하고, 변경 영향을 분석하며, 규격과 산출물의 일치 여부를 검토하는 작업은 중요하지만 반복적이다.</p><p>필자는 이 병목을 줄이기 위해 다음 세 가지 방향의 AI AX를 구현하려 했다.</p><h3 id="polarion-mcp-%EC%84%9C%EB%B2%84-%EA%B5%AC%EC%B6%95-%EA%B5%AC%EC%83%81">Polarion MCP 서버 구축 구상</h3><p>Model Context Protocol(MCP)을 활용해 사내 ALM인 Polarion과 LLM을 연결하고자 했다. 자연어 질의로 요구사항을 검색하고 연결 관계를 따라가며, 요구사항 추적성 분석과 안전 요구사항 도출을 보조하는 방식이다.</p><p>목표는 AI가 요구사항을 임의로 결정하게 하는 것이 아니었다. 사람이 반복적으로 수행하던 검색과 관계 확인을 줄이고, 엔지니어가 검토해야 할 후보와 근거를 빠르게 찾도록 돕는 구조를 만드는 것이었다.</p><h3 id="sysml-v2-textual-syntax-%ED%99%9C%EC%9A%A9-%EA%B5%AC%EC%83%81">SysML v2 Textual Syntax 활용 구상</h3><p>자연어 요구사항에서 시스템 구성 요소와 인터페이스 후보를 추출하고, SysML v2 Textual Syntax 형태로 시스템 아키텍처의 뼈대를 만드는 흐름을 구상했다. 같은 입력을 바탕으로 ISO 26262 HARA와 FMEA 초안을 생성해 초기 분석 시간을 줄이는 방향도 포함했다.</p><p>생성 결과는 최종 산출물이 아니라 검토를 시작하기 위한 초안으로 사용할 계획이었다. 안전 목표나 위험도 판단처럼 책임이 필요한 결정은 엔지니어가 직접 확인해야 한다는 원칙도 함께 두었다.</p><h3 id="%EC%98%A8%ED%94%84%EB%A0%88%EB%AF%B8%EC%8A%A4-rag-%EA%B5%AC%EC%B6%95-%EA%B5%AC%EC%83%81">온프레미스 RAG 구축 구상</h3><p>Ollama, LlamaIndex, OpenClaw를 조합해 사내 문서를 외부로 보내지 않는 로컬 지식 베이스를 만들고자 했다. 외부 클라우드에 올릴 수 없는 엔지니어링 규격과 프로젝트 자료를 로컬에서 검색하고 관련 근거를 찾아 검증하는 것이 목적이었다.</p><p>이 구상에서 중요하게 본 것은 모델 성능만이 아니었다. 데이터가 어디에 저장되는지, 누가 접근할 수 있는지, 답변이 어떤 근거에서 나왔는지를 추적할 수 있어야 실제 엔지니어링 업무에 적용할 수 있다고 판단했다. 그래서 해커톤에서도 도메인 문제를 구조화하고 AI를 업무 흐름에 연결하는 판단을 보여줄 수 있을 것이라 기대했다.</p><h2 id="%EA%B7%B8%EB%9F%B0%EB%8D%B0-%EC%8B%9C%ED%97%98%EC%9E%A5%EC%97%90%EC%84%9C%EB%8A%94-%EB%8B%A4%EB%A5%B8-%EB%AC%B8%EC%A0%9C%EA%B0%80-%EC%95%9E%EC%97%90-%EB%86%93%EC%98%80%EB%8B%A4">그런데 시험장에서는 다른 문제가 앞에 놓였다</h2><p>필자가 예상한 AI 해커톤 예선은 실제 업무 문제를 AI와 함께 분석하고, 적절한 도구와 모델을 선택해 결과물을 만드는 과정에 가까웠다. 앞서 정리한 Polarion MCP, SysML v2, HARA·FMEA 초안, 온프레미스 RAG처럼 도메인 문제를 정의하고 AI를 시스템에 어떻게 연결할지를 보여주는 평가를 기대했다. 공식 페이지가 실제 현장의 문제와 결과물 중심 평가를 강조했기 때문에 그런 기대가 더 컸다.</p><p>실제 프로그래머스 기반 예선에서 필자가 체감한 방향은 예상과 상당히 달랐다. 주어진 환경 안에서 제한된 토큰과 시간, 호출 기회를 관리하면서 답을 만들어야 했다. 익숙한 최신 도구를 조합하거나 아키텍처를 설계하기보다, 정해진 모델과 인터페이스 안에서 질문을 압축하고 AI의 빗나간 답을 빠르게 바로잡는 능력이 더 중요하게 느껴졌다.</p><p>문제는 이 두 능력이 완전히 같지 않다는 데 있었다. 이 간극이 가장 당황스러웠다. 필자는 도메인 지식을 AI와 결합해 실제 문제를 해결하는 능력을 보여주려 준비했지만, 시험 중에는 모델의 특성과 제약에 적응하고 시간 안에 답을 완성하는 데 많은 주의를 써야 했다. 내가 준비한 방향이 틀렸다고 단정할 수는 없지만, 적어도 필자가 생각한 ‘AI Native 문제 해결’과 시험장에서 경험한 ‘제한된 환경에서의 AI 운용’은 같은 모습이 아니었다.</p><p>처음에는 “왜 더 좋은 모델과 충분한 문맥을 두고 굳이 이렇게 제한된 환경에서 평가해야 하나?”라는 의문이 컸다. 실무에서는 문제에 맞는 도구를 선택하고, 필요한 자료를 연결하며, 결과를 반복 검증하는 능력도 중요하다고 생각했기 때문이다. 그래서 미선정 결과는 단순한 아쉬움보다 준비한 역량을 제대로 보여주지 못했다는 허탈함으로 남았다.</p><h2 id="%ED%95%84%EC%9E%90%EA%B0%80-%EB%8A%90%EB%82%80-%EC%A0%90-%EC%A4%80%EB%B9%84%EA%B0%80-%ED%8B%80%EB%A6%B0-%EA%B2%83%EC%9D%B4-%EC%95%84%EB%8B%88%EB%9D%BC-%EB%B3%B4%EC%97%AC%EC%A4%84-%EB%AC%B4%EB%8C%80%EA%B0%80-%EB%8B%AC%EB%9E%90%EB%8B%A4">필자가 느낀 점: 준비가 틀린 것이 아니라, 보여줄 무대가 달랐다</h2><p>미선정 결과가 아쉽지 않았다면 거짓말이다. 특히 필자가 보여주고 싶었던 것은 Polarion MCP나 SysML v2 같은 기술 이름 자체가 아니라, 시스템·임베디드 현장의 문제를 AI로 어떻게 풀 것인지에 대한 구상이었다. 그러나 실제 시험에서는 그 구상보다 제한된 시간과 토큰 안에서 모델을 다루는 순발력이 더 크게 요구된다고 느꼈다. 예상했던 시험의 방향과 실제 경험 사이의 차이가 컸던 만큼 결과를 받아들이는 과정도 쉽지 않았다.</p><p>그렇다고 시험 경험을 의미 없다고 보지는 않는다. 평가 이후 온프레미스와 망 분리 환경을 떠올리면서 제한을 다른 관점에서 보기 시작했다. 실제 기업에서는 항상 최신 모델과 무제한 리소스를 사용할 수 없다. 보안 정책, GPU 자원, 모델 배포 주기, 네트워크 제한 안에서 AI를 운영해야 한다. 제한된 자원으로 결과를 만들고 할루시네이션을 통제하며 근거를 남기는 능력 역시 엔지니어에게 필요한 역량이다.</p><p>다만 이것은 시험 의도에 대한 공식 해석이 아니라 필자가 경험을 소화하며 내린 사후 결론이다. 앞으로는 도메인 문제를 AI 시스템으로 해결하는 준비와 함께, 작은 모델과 제한된 환경에서도 문제를 구조화하고 결과를 검증하는 훈련을 병행하려 한다. 이번 미선정은 준비했던 방향을 버리게 한 결과가 아니라, 준비 범위를 더 넓혀야 한다는 신호로 받아들이고 있다.</p><h2 id="%EA%B7%BC%EA%B1%B0%EC%99%80-%EC%B0%B8%EA%B3%A0-%EC%9E%90%EB%A3%8C">근거와 참고 자료</h2><ul><li>SK하이닉스 AI 해커톤 2026 공식 페이지: https://skhynix-hackathon.com/ai-2026</li><li>프로그래머스 AI 역량평가 공식 소개 및 응시 환경 안내: https://programmers.co.kr/ai-assessment</li></ul><blockquote>위 기술 내용은 구현 완료 사례가 아니라 필자가 추진하려 했던 AI AX 구상이다. 평가 방향에 대한 기대와 실제 경험의 차이, 온프레미스 관점의 해석은 필자의 개인적인 회고이며 주최 측의 공식 평가 의도를 뜻하지 않는다.<br><br><strong>다음 편의 질문:</strong> 그렇다면 이 제약은 단지 불편한 시험 조건이었을까, 아니면 망 분리·온프레미스 환경의 엔지니어가 실제로 마주하는 문제와 닮아 있었을까? 2편에서 이 질문을 필자의 고찰로 이어간다.</blockquote>
+        </section>
+
+    </article>
+
+        <div class="gh-comments gh-canvas">
+            
+        <script defer src="https://cdn.jsdelivr.net/ghost/comments-ui@~1.6/umd/comments-ui.min.js" data-locale="en" data-ghost-comments="https://shining-sakaeru.github.io/" data-api="https://shining-sakaeru.github.io/ghost/api/content/" data-admin="https://shining-sakaeru.github.io/ghost/" data-key="33aac6ba9084fa3644388e277a" data-title="null" data-count="true" data-post-id="6add707eb0e02700018c48a0" data-color-scheme="auto" data-avatar-saturation="60" data-accent-color="#FF1A75" data-comments-enabled="all" data-publication="Noah's Blog" crossorigin="anonymous"></script>
+    
+        </div>
+
+</main>
+
+
+            <section class="gh-container is-grid gh-outer">
+                <div class="gh-container-inner gh-inner">
+                    <h2 class="gh-container-title">Read more</h2>
+                    <div class="gh-feed">
+                            <article class="gh-card post no-image">
+    <a class="gh-card-link" href="/openclaw-codex-plugin-registry-runtime-fix/">
+        <div class="gh-card-wrapper">
+            <h3 class="gh-card-title is-title">[4/6] OpenClaw Codex plugin은 enabled인데 runtime이 unavailable일 때</h3>
+                <p class="gh-card-excerpt is-body">OpenClaw Codex plugin이 enabled로 보이는데도 agent harness codex를 찾지 못한 문제를 plugin registry와 Gateway 재시작으로 진단합니다.</p>
+            <footer class="gh-card-meta">
+<!--
+             -->
+                    <span class="gh-card-author">By Noah Sim</span>
+                    <time class="gh-card-date" datetime="2026-10-24">24 Oct 2026</time>
+                <!--
+         --></footer>
+        </div>
+    </a>
+</article>
+                            <article class="gh-card post no-image">
+    <a class="gh-card-link" href="/openclaw-openai-route-compatible-auth-error/">
+        <div class="gh-card-wrapper">
+            <h3 class="gh-card-title is-title">[3/6] OpenClaw OAuth는 성공했는데 route-compatible authentication 오류가 난 이유</h3>
+                <p class="gh-card-excerpt is-body">OpenClaw에 OpenAI OAuth profile이 저장되어 있는데도 route-compatible authentication 오류가 발생한 원인을 모델 route와 auth order 관점에서 분석합니다.</p>
+            <footer class="gh-card-meta">
+<!--
+             -->
+                    <span class="gh-card-author">By Noah Sim</span>
+                    <time class="gh-card-date" datetime="2026-10-22">22 Oct 2026</time>
+                <!--
+         --></footer>
+        </div>
+    </a>
+</article>
+                            <article class="gh-card post">
+    <a class="gh-card-link" href="/openclaw-remote-openai-oauth-localhost-callback/">
+            <figure class="gh-card-image">
+                <img
+                    srcset="/content/images/size/w160/format/webp/2026/10/series-openhands.png 160w,
+                            /content/images/size/w320/format/webp/2026/10/series-openhands.png 320w,
+                            /content/images/size/w600/format/webp/2026/10/series-openhands.png 600w,
+                            /content/images/size/w960/format/webp/2026/10/series-openhands.png 960w,
+                            /content/images/size/w1200/format/webp/2026/10/series-openhands.png 1200w,
+                            /content/images/size/w2000/format/webp/2026/10/series-openhands.png 2000w"
+                    sizes="auto, (max-width: 1199px) 100vw, 980px"
+                    src="/content/images/size/w600/2026/10/series-openhands.png"
+                    alt="[2/6] 원격 Oracle 서버의 OpenClaw OpenAI OAuth가 localhost에서 실패할 때"
+                    loading="lazy"
+                >
+            </figure>
+        <div class="gh-card-wrapper">
+            <h3 class="gh-card-title is-title">[2/6] 원격 Oracle 서버의 OpenClaw OpenAI OAuth가 localhost에서 실패할 때</h3>
+                <p class="gh-card-excerpt is-body">Oracle Cloud 호스트에서 시작한 OpenClaw OpenAI OAuth가 로컬 브라우저의 localhost callback으로 돌아가 ERR_CONNECTION_REFUSED를 낸 원인과 해결 방법을 정리합니다.</p>
+            <footer class="gh-card-meta">
+<!--
+             -->
+                    <span class="gh-card-author">By Noah Sim</span>
+                    <time class="gh-card-date" datetime="2026-10-21">21 Oct 2026</time>
+                <!--
+         --></footer>
+        </div>
+    </a>
+</article>
+                            <article class="gh-card post">
+    <a class="gh-card-link" href="/local-oracle-container-ai-agent-integration/">
+            <figure class="gh-card-image">
+                <img
+                    srcset="/content/images/size/w160/format/webp/2026/10/series-openhands.png 160w,
+                            /content/images/size/w320/format/webp/2026/10/series-openhands.png 320w,
+                            /content/images/size/w600/format/webp/2026/10/series-openhands.png 600w,
+                            /content/images/size/w960/format/webp/2026/10/series-openhands.png 960w,
+                            /content/images/size/w1200/format/webp/2026/10/series-openhands.png 1200w,
+                            /content/images/size/w2000/format/webp/2026/10/series-openhands.png 2000w"
+                    sizes="auto, (max-width: 1199px) 100vw, 980px"
+                    src="/content/images/size/w600/2026/10/series-openhands.png"
+                    alt="[1/6] 로컬·Oracle 서버·컨테이너를 잇는 AI 운영 구조: OpenClaw 통합기의 시작"
+                    loading="lazy"
+                >
+            </figure>
+        <div class="gh-card-wrapper">
+            <h3 class="gh-card-title is-title">[1/6] 로컬·Oracle 서버·컨테이너를 잇는 AI 운영 구조: OpenClaw 통합기의 시작</h3>
+                <p class="gh-card-excerpt is-body">Mac 로컬 브라우저, Oracle Ubuntu 호스트, OpenHands 컨테이너가 서로 다른 localhost와 파일 경로를 사용하는 문제를 공유 작업공간과 handoff 규칙으로 해결한 과정을 정리합니다.</p>
+            <footer class="gh-card-meta">
+<!--
+             -->
+                    <span class="gh-card-author">By Noah Sim</span>
+                    <time class="gh-card-date" datetime="2026-10-18">18 Oct 2026</time>
+                <!--
+         --></footer>
+        </div>
+    </a>
+</article>
+                    </div>
+                </div>
+            </section>
+
+    
+    <footer class="gh-footer gh-outer">
+    <div class="gh-footer-inner gh-inner">
+
+                <section class="gh-footer-signup">
+                    <h2 class="gh-footer-signup-header is-title">
+                        Noah&#x27;s Blog
+                    </h2>
+                    <p class="gh-footer-signup-subhead is-body">
+                        Thoughts, stories and ideas.
+                    </p>
+                    <form class="gh-form" data-members-form>
+    <input class="gh-form-input" id="footer-email" name="email" type="email" placeholder="jamie@example.com" required data-members-email>
+    <button class="gh-button" type="submit" aria-label="Subscribe">
+        <span><span>Subscribe</span> <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" viewBox="0 0 256 256"><path d="M224.49,136.49l-72,72a12,12,0,0,1-17-17L187,140H40a12,12,0,0,1,0-24H187L135.51,64.48a12,12,0,0,1,17-17l72,72A12,12,0,0,1,224.49,136.49Z"></path></svg></span>
+        <svg xmlns="http://www.w3.org/2000/svg" height="24" width="24" viewBox="0 0 24 24">
+    <g stroke-linecap="round" stroke-width="2" fill="currentColor" stroke="none" stroke-linejoin="round" class="nc-icon-wrapper">
+        <g class="nc-loop-dots-4-24-icon-o">
+            <circle cx="4" cy="12" r="3"></circle>
+            <circle cx="12" cy="12" r="3"></circle>
+            <circle cx="20" cy="12" r="3"></circle>
+        </g>
+        <style data-cap="butt">
+            .nc-loop-dots-4-24-icon-o{--animation-duration:0.8s}
+            .nc-loop-dots-4-24-icon-o *{opacity:.4;transform:scale(.75);animation:nc-loop-dots-4-anim var(--animation-duration) infinite}
+            .nc-loop-dots-4-24-icon-o :nth-child(1){transform-origin:4px 12px;animation-delay:-.3s;animation-delay:calc(var(--animation-duration)/-2.666)}
+            .nc-loop-dots-4-24-icon-o :nth-child(2){transform-origin:12px 12px;animation-delay:-.15s;animation-delay:calc(var(--animation-duration)/-5.333)}
+            .nc-loop-dots-4-24-icon-o :nth-child(3){transform-origin:20px 12px}
+            @keyframes nc-loop-dots-4-anim{0%,100%{opacity:.4;transform:scale(.75)}50%{opacity:1;transform:scale(1)}}
+        </style>
+    </g>
+</svg>        <span>Email sent</span>
+    </button>
+    <p data-members-error></p>
+</form>
+                </section>
+
+        <div class="gh-social-links">
+                <a href="https://x.com/ghost" target="_blank" rel="noopener" aria-label="X">
+<svg viewBox="0 0 24 24" fill="currentColor"><g><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path></g></svg>                </a>
+                <a href="https://www.facebook.com/ghost" target="_blank" rel="noopener" aria-label="Facebook">
+<svg class="icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="currentColor"><path d="M23.9981 11.9991C23.9981 5.37216 18.626 0 11.9991 0C5.37216 0 0 5.37216 0 11.9991C0 17.9882 4.38789 22.9522 10.1242 23.8524V15.4676H7.07758V11.9991H10.1242V9.35553C10.1242 6.34826 11.9156 4.68714 14.6564 4.68714C15.9692 4.68714 17.3424 4.92149 17.3424 4.92149V7.87439H15.8294C14.3388 7.87439 13.8739 8.79933 13.8739 9.74824V11.9991H17.2018L16.6698 15.4676H13.8739V23.8524C19.6103 22.9522 23.9981 17.9882 23.9981 11.9991Z"/></svg>                </a>
+                <a href="https://www.linkedin.com/in/chanyoung-sim-a40216101" target="_blank" rel="noopener" aria-label="LinkedIn">
+<svg class="icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M22.2 0H1.8C1.32261 0 0.864773 0.18964 0.527213 0.527213C0.18964 0.864773 0 1.32261 0 1.8V22.2C0 22.6773 0.18964 23.1352 0.527213 23.4728C0.864773 23.8104 1.32261 24 1.8 24H22.2C22.6773 24 23.1352 23.8104 23.4728 23.4728C23.8104 23.1352 24 22.6773 24 22.2V1.8C24 1.32261 23.8104 0.864773 23.4728 0.527213C23.1352 0.18964 22.6773 0 22.2 0ZM7.2 20.4H3.6V9.6H7.2V20.4ZM5.4 7.5C4.98741 7.48821 4.58747 7.35509 4.25011 7.11729C3.91275 6.87949 3.65293 6.54755 3.50316 6.16293C3.35337 5.77832 3.32025 5.35809 3.40793 4.95476C3.4956 4.55144 3.7002 4.18288 3.99613 3.89517C4.29208 3.60745 4.66624 3.41332 5.07188 3.33704C5.47752 3.26075 5.89664 3.30569 6.27688 3.46625C6.65712 3.6268 6.98163 3.89585 7.20983 4.23977C7.43804 4.58371 7.55983 4.98725 7.56 5.4C7.55052 5.96441 7.318 6.50213 6.91327 6.89564C6.50852 7.28913 5.96447 7.50643 5.4 7.5ZM20.4 20.4H16.8V14.712C16.8 13.008 16.08 12.396 15.144 12.396C14.8696 12.4143 14.6015 12.4865 14.3551 12.6088C14.1087 12.7309 13.8888 12.9007 13.7081 13.108C13.5276 13.3155 13.3896 13.5565 13.3024 13.8173C13.2152 14.0781 13.1804 14.3536 13.2 14.628C13.194 14.6839 13.194 14.7401 13.2 14.796V20.4H9.6V9.6H13.08V11.16C13.4311 10.626 13.9133 10.1911 14.4807 9.89693C15.048 9.6028 15.6813 9.4592 16.32 9.48C18.18 9.48 20.352 10.512 20.352 13.872L20.4 20.4Z" fill="currentColor"/>
+</svg>                </a>
+        </div>
+
+        <div class="gh-footer-bar">
+            <span class="gh-footer-logo is-title">
+                    Noah&#x27;s Blog
+            </span>
+            <nav class="gh-footer-menu">
+                <ul class="nav">
+    <li class="nav-sign-up"><a href="#/portal/">Sign up</a></li>
+</ul>
+
+            </nav>
+            <div class="gh-footer-copyright">
+                Powered by <a href="https://ghost.org/" target="_blank" rel="noopener">Ghost</a>
+            </div>
+        </div>
+
+    </div>
+</footer>
+    
+</div>
+
+    <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="pswp__bg"></div>
+
+    <div class="pswp__scroll-wrap">
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        <div class="pswp__ui pswp__ui--hidden">
+            <div class="pswp__top-bar">
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button>
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)"></button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="/assets/built/source.js?v=33sa4-qy5thAFPQH"></script>
+
+
+
+</body>
+</html>

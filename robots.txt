@@ -1,8 +1,6 @@
 User-agent: *
-Sitemap: http://100.101.144.75:2368/sitemap.xml
 Disallow: /ghost/
 Disallow: /email/
-Disallow: /members/api/comments/counts/
+Disallow: /members/
 Disallow: /r/
-Disallow: /webmentions/receive/
-Disallow: /.ghost/analytics/api/
+Sitemap: https://shining-sakaeru.github.io/sitemap.xml
